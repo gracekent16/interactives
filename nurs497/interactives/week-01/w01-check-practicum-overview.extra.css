@@ -1,0 +1,129 @@
+.__NS__ .alloc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.__NS__ .alloc-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "name ctl" "tot flag";
+  align-items: center;
+  gap: 6px 18px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.__NS__ .alloc-row.good {
+  border-color: var(--ok-line);
+  border-left-color: var(--ok);
+  background: var(--ok-soft);
+}
+
+.__NS__ .alloc-row.warn {
+  border-color: var(--bad-line);
+  border-left-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.__NS__ .alloc-name {
+  grid-area: name;
+  min-width: 0;
+}
+
+.__NS__ .alloc-name strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.__NS__ .alloc-name span {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.__NS__ .alloc-ctl {
+  grid-area: ctl;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.__NS__ .alloc-btn {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border: 1px solid var(--line);
+  border-bottom-width: 3px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.__NS__ .alloc-btn:hover:not([disabled]) {
+  border-color: var(--brand);
+  color: var(--brand-deep);
+}
+
+.__NS__ .alloc-btn:active:not([disabled]) {
+  border-bottom-width: 1px;
+  transform: translateY(2px);
+}
+
+.__NS__ .alloc-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.__NS__ .alloc-val {
+  min-width: 108px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.__NS__ .alloc-val strong {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.__NS__ .alloc-tot {
+  grid-area: tot;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.__NS__ .alloc-flag {
+  grid-area: flag;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.__NS__ .alloc-row.good .alloc-flag { color: var(--ok-deep); }
+.__NS__ .alloc-row.warn .alloc-flag { color: var(--bad-deep); }
+
+@media (max-width: 560px) {
+  .__NS__ .alloc-row {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "name" "ctl" "tot" "flag";
+  }
+
+  .__NS__ .alloc-ctl { justify-content: flex-start; }
+  .__NS__ .alloc-flag { text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .__NS__ .alloc-btn:active:not([disabled]) { transform: none; }
+}
