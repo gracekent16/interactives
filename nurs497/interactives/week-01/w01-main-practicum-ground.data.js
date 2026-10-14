@@ -5,7 +5,7 @@
   "lede": "Map where nurses actually practice and what each role takes, then name the setting and the nurse expert you want for your own capstone.",
   "pills": ["CSLO A, B"],
   "setup": "This course asks you to choose a nurse expert to precept you in an area of interest, and that choice is only as good as your picture of what nurses do and where. Work through where the profession's roles actually sit, then name your own ground.",
-  "foot": "Ungraded practice. This does not replace the graded assignment.",
+  "foot": "This is ungraded practice.",
   "noscript": "This activity asks you to place nursing roles on a grid of hospital and non-hospital settings against the preparation each requires, match the four advanced practice roles to their scope and education, judge what a telehealth role adds, decide where a preceptor relationship crosses a professional boundary, and draft the plan section of your initial journal."
 }
 META*/

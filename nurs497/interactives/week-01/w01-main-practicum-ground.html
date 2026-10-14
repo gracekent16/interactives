@@ -92,6 +92,7 @@
   border-radius: var(--radius);
   box-shadow: 0 1px 2px rgba(15, 18, 34, 0.04), 0 16px 40px rgba(15, 18, 34, 0.07);
 }
+.nurs497-w01-main-practicum-ground .grade-note { margin: 0; padding: 0.55rem 1.75rem; background: var(--brand-soft); color: var(--brand-deep); font-size: 0.85rem; font-weight: 700; line-height: 1.4; border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; border-bottom: 1px solid var(--line); }
 .nurs497-w01-main-practicum-ground .lhead { display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start; padding: 1.6rem 1.75rem 0.9rem; }
 .nurs497-w01-main-practicum-ground h1 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
 .nurs497-w01-main-practicum-ground .lsub { margin: 0.45rem 0 0; color: var(--muted); max-width: 62ch; font-size: 0.98rem; }
@@ -156,7 +157,8 @@
 .nurs497-w01-main-practicum-ground .timeline .slots::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 1.05rem; height: 4px; border-radius: 4px; background: var(--line); }
 .nurs497-w01-main-practicum-ground .timeline .slot { position: relative; }
 .nurs497-w01-main-practicum-ground .timeline .node { position: absolute; top: -2.25rem; left: 50%; transform: translateX(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 3px solid var(--line-strong); }
-.nurs497-w01-main-practicum-ground .timeline .era { position: absolute; top: -2.3rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; color: var(--muted); white-space: nowrap; }
+.nurs497-w01-main-practicum-ground .timeline .era { position: absolute; top: -2.7rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--muted); white-space: nowrap; }
+.nurs497-w01-main-practicum-ground .timeline .slot:first-child .era { left: auto; right: calc(50% + 1.1rem); }
 .nurs497-w01-main-practicum-ground .slot .tile.is-empty { border-style: dashed; color: var(--muted); background: var(--soft); min-height: 5.5rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
 .nurs497-w01-main-practicum-ground .timeline .slot .tile { min-height: 5.5rem; }
 .nurs497-w01-main-practicum-ground .slot.c0 .node { background: var(--brand); border-color: var(--brand); }
@@ -240,6 +242,7 @@
 .nurs497-w01-main-practicum-ground .stage-in { animation: nurs497-w01-main-practicum-ground-in 360ms var(--ease); }
 @media (max-width: 720px) {
   .nurs497-w01-main-practicum-ground .lhead { flex-direction: column; padding: 1.25rem 1.1rem 0.75rem; }
+  .nurs497-w01-main-practicum-ground .grade-note { padding-left: 1.1rem; padding-right: 1.1rem; }
   .nurs497-w01-main-practicum-ground .prog, .nurs497-w01-main-practicum-ground .viz { padding-left: 1.1rem; padding-right: 1.1rem; }
   .nurs497-w01-main-practicum-ground .stage { padding: 1.1rem 1.1rem 1.4rem; }
   .nurs497-w01-main-practicum-ground .bar { flex-direction: column; align-items: stretch; padding: 1rem 1.1rem; }
@@ -357,6 +360,7 @@
 <body>
   <div class="nurs497-w01-main-practicum-ground">
     <div class="lesson">
+      <p class="grade-note">This is ungraded practice.</p>
       <header class="lhead">
         <div>
           <h1>Choose Your Practicum Ground</h1>
@@ -377,7 +381,7 @@
         </div>
       </div>
     </div>
-    <p class="foot">Ungraded practice. This does not replace the graded assignment.</p>
+    <p class="foot">This is ungraded practice.</p>
     <div class="sr-live" aria-live="polite" aria-atomic="true"></div>
     <noscript><p>This activity asks you to place nursing roles on a grid of hospital and non-hospital settings against the preparation each requires, match the four advanced practice roles to their scope and education, judge what a telehealth role adds, decide where a preceptor relationship crosses a professional boundary, and draft the plan section of your initial journal.</p></noscript>
   </div>
