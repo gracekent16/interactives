@@ -1,6 +1,6 @@
 <script class="bb-embedded-html bb-auto-resize" type="text/javascript">
   function resizeFunc() {
-    var root = document.querySelector(".nurs497-w07-check-improvement-cycle");
+    var root = document.querySelector(".nurs497-w03-main-safety-flags");
     if (!root) return;
     var node = root, i = 0;
     while (node && i < 20) {
@@ -33,10 +33,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Run the Improvement Cycle</title>
+  <title>What the Safety Plan Leaves Out</title>
   <style>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
-.nurs497-w07-check-improvement-cycle {
+.nurs497-w03-main-safety-flags {
   --ink: #0F1222;
   --muted: #545B6E;
   --line: #E4E6EE;
@@ -83,294 +83,293 @@
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
-.nurs497-w07-check-improvement-cycle *, .nurs497-w07-check-improvement-cycle *::before, .nurs497-w07-check-improvement-cycle *::after { box-sizing: border-box; }
-.nurs497-w07-check-improvement-cycle ::selection { background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle button { font-family: inherit; }
-.nurs497-w07-check-improvement-cycle .lesson {
+.nurs497-w03-main-safety-flags *, .nurs497-w03-main-safety-flags *::before, .nurs497-w03-main-safety-flags *::after { box-sizing: border-box; }
+.nurs497-w03-main-safety-flags ::selection { background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags button { font-family: inherit; }
+.nurs497-w03-main-safety-flags .lesson {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 1px 2px rgba(15, 18, 34, 0.04), 0 16px 40px rgba(15, 18, 34, 0.07);
 }
-.nurs497-w07-check-improvement-cycle .grade-note { margin: 0; padding: 0.55rem 1.75rem; background: var(--brand-soft); color: var(--brand-deep); font-size: 0.85rem; font-weight: 700; line-height: 1.4; border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; border-bottom: 1px solid var(--line); }
-.nurs497-w07-check-improvement-cycle .lhead { display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start; padding: 1.6rem 1.75rem 0.9rem; }
-.nurs497-w07-check-improvement-cycle h1 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
-.nurs497-w07-check-improvement-cycle .lsub { margin: 0.45rem 0 0; color: var(--muted); max-width: 62ch; font-size: 0.98rem; }
-.nurs497-w07-check-improvement-cycle .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
-.nurs497-w07-check-improvement-cycle .pill { font-size: 0.75rem; font-weight: 800; color: var(--brand-deep); background: var(--brand-soft); border-radius: 999px; padding: 0.22rem 0.65rem; }
-.nurs497-w07-check-improvement-cycle .prog { display: flex; align-items: center; gap: 0.85rem; padding: 0.25rem 1.75rem 0.5rem; }
-.nurs497-w07-check-improvement-cycle .prog-track { position: relative; flex: 1; height: 12px; background: var(--soft); border-radius: 999px; overflow: hidden; }
-.nurs497-w07-check-improvement-cycle .prog-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--pink)); transition: width 520ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .prog-fill::after { content: ""; position: absolute; left: 6px; right: 6px; top: 3px; height: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.35); }
-.nurs497-w07-check-improvement-cycle .prog-text { font-size: 0.8rem; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.nurs497-w07-check-improvement-cycle .viz { padding: 0.75rem 1.75rem 0; }
-.nurs497-w07-check-improvement-cycle .viz svg { display: block; width: 100%; height: auto; max-width: 760px; margin: 0 auto; }
-.nurs497-w07-check-improvement-cycle .stage { padding: 1.25rem 1.75rem 1.75rem; }
-.nurs497-w07-check-improvement-cycle h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.45rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; text-wrap: balance; }
-.nurs497-w07-check-improvement-cycle h2:focus { outline: none; }
-.nurs497-w07-check-improvement-cycle .help { margin: 0.4rem 0 1.15rem; color: var(--muted); font-size: 0.95rem; max-width: 68ch; }
-.nurs497-w07-check-improvement-cycle h3 { margin: 0 0 0.55rem; font-size: 0.85rem; font-weight: 800; color: var(--muted); }
-.nurs497-w07-check-improvement-cycle .tile {
+.nurs497-w03-main-safety-flags .grade-note { margin: 0; padding: 0.55rem 1.75rem; background: var(--brand-soft); color: var(--brand-deep); font-size: 0.85rem; font-weight: 700; line-height: 1.4; border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; border-bottom: 1px solid var(--line); }
+.nurs497-w03-main-safety-flags .lhead { display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start; padding: 1.6rem 1.75rem 0.9rem; }
+.nurs497-w03-main-safety-flags h1 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
+.nurs497-w03-main-safety-flags .lsub { margin: 0.45rem 0 0; color: var(--muted); max-width: 62ch; font-size: 0.98rem; }
+.nurs497-w03-main-safety-flags .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+.nurs497-w03-main-safety-flags .pill { font-size: 0.75rem; font-weight: 800; color: var(--brand-deep); background: var(--brand-soft); border-radius: 999px; padding: 0.22rem 0.65rem; }
+.nurs497-w03-main-safety-flags .prog { display: flex; align-items: center; gap: 0.85rem; padding: 0.25rem 1.75rem 0.5rem; }
+.nurs497-w03-main-safety-flags .prog-track { position: relative; flex: 1; height: 12px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.nurs497-w03-main-safety-flags .prog-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--pink)); transition: width 520ms var(--ease); }
+.nurs497-w03-main-safety-flags .prog-fill::after { content: ""; position: absolute; left: 6px; right: 6px; top: 3px; height: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.35); }
+.nurs497-w03-main-safety-flags .prog-text { font-size: 0.8rem; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.nurs497-w03-main-safety-flags .viz { padding: 0.75rem 1.75rem 0; }
+.nurs497-w03-main-safety-flags .viz svg { display: block; width: 100%; height: auto; max-width: 760px; margin: 0 auto; }
+.nurs497-w03-main-safety-flags .stage { padding: 1.25rem 1.75rem 1.75rem; }
+.nurs497-w03-main-safety-flags h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.45rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; text-wrap: balance; }
+.nurs497-w03-main-safety-flags h2:focus { outline: none; }
+.nurs497-w03-main-safety-flags .help { margin: 0.4rem 0 1.15rem; color: var(--muted); font-size: 0.95rem; max-width: 68ch; }
+.nurs497-w03-main-safety-flags h3 { margin: 0 0 0.55rem; font-size: 0.85rem; font-weight: 800; color: var(--muted); }
+.nurs497-w03-main-safety-flags .tile {
   display: block; width: 100%; text-align: left; color: var(--ink); background: var(--card);
   border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px;
   padding: 0.75rem 0.95rem; font-size: 0.95rem; font-weight: 600; line-height: 1.4; min-height: 3rem; cursor: pointer;
   transition: border-color 160ms var(--ease), background-color 160ms var(--ease), transform 120ms var(--ease);
 }
-.nurs497-w07-check-improvement-cycle .tile:hover { border-color: var(--line-strong); background: #FAFAFE; }
-.nurs497-w07-check-improvement-cycle .tile:active { transform: translateY(2px); border-bottom-width: 2px; margin-bottom: 2px; }
-.nurs497-w07-check-improvement-cycle .tile.is-sel { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .tile.is-ok { border-color: var(--ok); background: var(--ok-soft); color: var(--ok-deep); }
-.nurs497-w07-check-improvement-cycle .tile.is-bad { border-color: var(--bad); background: var(--bad-soft); color: var(--bad-deep); animation: nurs497-w07-check-improvement-cycle-shake 360ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .tile[disabled] { cursor: default; opacity: 0.55; }
-.nurs497-w07-check-improvement-cycle .tile .sub { display: block; font-weight: 600; font-size: 0.82rem; color: var(--muted); margin-top: 0.15rem; }
-.nurs497-w07-check-improvement-cycle .tile.is-sel .sub, .nurs497-w07-check-improvement-cycle .tile.is-ok .sub, .nurs497-w07-check-improvement-cycle .tile.is-bad .sub { color: inherit; opacity: 0.85; }
-.nurs497-w07-check-improvement-cycle button:focus-visible, .nurs497-w07-check-improvement-cycle input:focus-visible, .nurs497-w07-check-improvement-cycle textarea:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
-.nurs497-w07-check-improvement-cycle .pool { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 1.1rem; min-height: 3rem; }
-.nurs497-w07-check-improvement-cycle .pool .tile { width: auto; flex: 1 1 15rem; max-width: 100%; }
-.nurs497-w07-check-improvement-cycle .pool-empty { color: var(--muted); font-size: 0.9rem; font-weight: 600; padding: 0.7rem 0; }
-.nurs497-w07-check-improvement-cycle .bins { display: grid; gap: 0.75rem; grid-template-columns: repeat(var(--bins, 2), minmax(0, 1fr)); }
-.nurs497-w07-check-improvement-cycle .bin {
+.nurs497-w03-main-safety-flags .tile:hover { border-color: var(--line-strong); background: #FAFAFE; }
+.nurs497-w03-main-safety-flags .tile:active { transform: translateY(2px); border-bottom-width: 2px; margin-bottom: 2px; }
+.nurs497-w03-main-safety-flags .tile.is-sel { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .tile.is-ok { border-color: var(--ok); background: var(--ok-soft); color: var(--ok-deep); }
+.nurs497-w03-main-safety-flags .tile.is-bad { border-color: var(--bad); background: var(--bad-soft); color: var(--bad-deep); animation: nurs497-w03-main-safety-flags-shake 360ms var(--ease); }
+.nurs497-w03-main-safety-flags .tile[disabled] { cursor: default; opacity: 0.55; }
+.nurs497-w03-main-safety-flags .tile .sub { display: block; font-weight: 600; font-size: 0.82rem; color: var(--muted); margin-top: 0.15rem; }
+.nurs497-w03-main-safety-flags .tile.is-sel .sub, .nurs497-w03-main-safety-flags .tile.is-ok .sub, .nurs497-w03-main-safety-flags .tile.is-bad .sub { color: inherit; opacity: 0.85; }
+.nurs497-w03-main-safety-flags button:focus-visible, .nurs497-w03-main-safety-flags input:focus-visible, .nurs497-w03-main-safety-flags textarea:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+.nurs497-w03-main-safety-flags .pool { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 1.1rem; min-height: 3rem; }
+.nurs497-w03-main-safety-flags .pool .tile { width: auto; flex: 1 1 15rem; max-width: 100%; }
+.nurs497-w03-main-safety-flags .pool-empty { color: var(--muted); font-size: 0.9rem; font-weight: 600; padding: 0.7rem 0; }
+.nurs497-w03-main-safety-flags .bins { display: grid; gap: 0.75rem; grid-template-columns: repeat(var(--bins, 2), minmax(0, 1fr)); }
+.nurs497-w03-main-safety-flags .bin {
   display: flex; flex-direction: column; gap: 0.45rem; width: 100%; text-align: left; cursor: pointer;
   background: var(--soft); border: 2px dashed var(--line-strong); border-radius: 18px; padding: 0.85rem; min-height: 7rem;
   color: var(--ink); transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
 }
-.nurs497-w07-check-improvement-cycle .bin-label { font-size: 0.92rem; font-weight: 800; }
-.nurs497-w07-check-improvement-cycle .bin-sub { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-top: -0.3rem; }
-.nurs497-w07-check-improvement-cycle .bins.is-armed .bin { border-color: var(--brand); background: #F6F4FF; }
-.nurs497-w07-check-improvement-cycle .bin .tile { font-size: 0.88rem; padding: 0.55rem 0.7rem; min-height: 2.5rem; }
-.nurs497-w07-check-improvement-cycle .binwrap { display: flex; flex-direction: column; gap: 0.45rem; }
-.nurs497-w07-check-improvement-cycle .flow { display: grid; grid-template-columns: repeat(var(--bins, 4), minmax(0, 1fr)); gap: 1.4rem; position: relative; }
-.nurs497-w07-check-improvement-cycle .flow .binwrap { position: relative; }
-.nurs497-w07-check-improvement-cycle .flow .binwrap:not(:last-child)::after {
+.nurs497-w03-main-safety-flags .bin-label { font-size: 0.92rem; font-weight: 800; }
+.nurs497-w03-main-safety-flags .bin-sub { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-top: -0.3rem; }
+.nurs497-w03-main-safety-flags .bins.is-armed .bin { border-color: var(--brand); background: #F6F4FF; }
+.nurs497-w03-main-safety-flags .bin .tile { font-size: 0.88rem; padding: 0.55rem 0.7rem; min-height: 2.5rem; }
+.nurs497-w03-main-safety-flags .binwrap { display: flex; flex-direction: column; gap: 0.45rem; }
+.nurs497-w03-main-safety-flags .flow { display: grid; grid-template-columns: repeat(var(--bins, 4), minmax(0, 1fr)); gap: 1.4rem; position: relative; }
+.nurs497-w03-main-safety-flags .flow .binwrap { position: relative; }
+.nurs497-w03-main-safety-flags .flow .binwrap:not(:last-child)::after {
   content: ""; position: absolute; top: 2.1rem; right: -1.15rem; width: 0.9rem; height: 0.9rem;
   border-top: 3px solid var(--line-strong); border-right: 3px solid var(--line-strong); transform: rotate(45deg);
 }
-.nurs497-w07-check-improvement-cycle .flow-loop { margin: 0.6rem 0 0; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
-.nurs497-w07-check-improvement-cycle .step-dot { display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 2px solid var(--line-strong); font-size: 0.78rem; font-weight: 800; margin-right: 0.4rem; }
-.nurs497-w07-check-improvement-cycle .matrix { display: grid; grid-template-columns: minmax(7rem, 0.7fr) repeat(var(--cols, 2), minmax(0, 1fr)); gap: 0.6rem; align-items: stretch; }
-.nurs497-w07-check-improvement-cycle .mx-col { font-size: 0.92rem; font-weight: 800; padding: 0.2rem 0.3rem; display: flex; align-items: flex-end; }
-.nurs497-w07-check-improvement-cycle .mx-row { font-size: 0.9rem; font-weight: 800; display: flex; align-items: center; padding-right: 0.3rem; }
-.nurs497-w07-check-improvement-cycle .matrix .bin { min-height: 6.25rem; }
-.nurs497-w07-check-improvement-cycle .matrix .bin-label { display: none; }
-.nurs497-w07-check-improvement-cycle .slots { list-style: none; margin: 0 0 1.1rem; padding: 0; display: grid; gap: 0.75rem; }
-.nurs497-w07-check-improvement-cycle .timeline .slots { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); position: relative; padding-top: 2.6rem; }
-.nurs497-w07-check-improvement-cycle .timeline .slots::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 1.05rem; height: 4px; border-radius: 4px; background: var(--line); }
-.nurs497-w07-check-improvement-cycle .timeline .slot { position: relative; }
-.nurs497-w07-check-improvement-cycle .timeline .node { position: absolute; top: -2.25rem; left: 50%; transform: translateX(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 3px solid var(--line-strong); }
-.nurs497-w07-check-improvement-cycle .timeline .era { position: absolute; top: -2.7rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--muted); white-space: nowrap; }
-.nurs497-w07-check-improvement-cycle .timeline .slot:first-child .era { left: auto; right: calc(50% + 1.1rem); }
-.nurs497-w07-check-improvement-cycle .slot .tile.is-empty { border-style: dashed; color: var(--muted); background: var(--soft); min-height: 5.5rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
-.nurs497-w07-check-improvement-cycle .timeline .slot .tile { min-height: 5.5rem; }
-.nurs497-w07-check-improvement-cycle .slot.c0 .node { background: var(--brand); border-color: var(--brand); }
-.nurs497-w07-check-improvement-cycle .slot.c1 .node { background: var(--teal); border-color: var(--teal); }
-.nurs497-w07-check-improvement-cycle .slot.c2 .node { background: var(--pink); border-color: var(--pink); }
-.nurs497-w07-check-improvement-cycle .slot.c3 .node { background: var(--amber); border-color: var(--amber); }
-.nurs497-w07-check-improvement-cycle .slot-label { font-size: 0.78rem; font-weight: 800; color: var(--muted); margin-bottom: 0.3rem; }
-.nurs497-w07-check-improvement-cycle .chain .slot { position: relative; }
-.nurs497-w07-check-improvement-cycle .chain .slot:not(:last-child)::after { content: ""; display: block; width: 3px; height: 0.75rem; margin: 0.35rem auto 0; background: var(--line-strong); border-radius: 3px; }
-.nurs497-w07-check-improvement-cycle .match { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.25rem; }
-.nurs497-w07-check-improvement-cycle .match-col { display: flex; flex-direction: column; gap: 0.55rem; }
-.nurs497-w07-check-improvement-cycle .tile.has-badge { display: flex; gap: 0.65rem; align-items: flex-start; }
-.nurs497-w07-check-improvement-cycle .badge { flex: none; width: 1.65rem; height: 1.65rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; background: var(--soft); color: var(--muted); border: 2px solid var(--line); }
-.nurs497-w07-check-improvement-cycle .badge.c0 { background: var(--brand); border-color: var(--brand); color: #fff; }
-.nurs497-w07-check-improvement-cycle .badge.c1 { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
-.nurs497-w07-check-improvement-cycle .badge.c2 { background: var(--pink-deep); border-color: var(--pink-deep); color: #fff; }
-.nurs497-w07-check-improvement-cycle .badge.c3 { background: var(--amber); border-color: var(--amber); color: var(--ink); }
-.nurs497-w07-check-improvement-cycle .opts { display: grid; gap: 0.6rem; }
-.nurs497-w07-check-improvement-cycle .opt-key { flex: none; width: 1.8rem; height: 1.8rem; border-radius: 9px; border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; color: var(--muted); }
-.nurs497-w07-check-improvement-cycle .tile.is-sel .opt-key { border-color: var(--brand); color: var(--brand-deep); background: #fff; }
-.nurs497-w07-check-improvement-cycle .tile.is-ok .opt-key { border-color: var(--ok); color: var(--ok-deep); background: #fff; }
-.nurs497-w07-check-improvement-cycle .tile.is-bad .opt-key { border-color: var(--bad); color: var(--bad-deep); background: #fff; }
-.nurs497-w07-check-improvement-cycle .speaker { display: flex; gap: 0.85rem; align-items: flex-start; margin: 0 0 1.1rem; }
-.nurs497-w07-check-improvement-cycle .avatar { flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: var(--brand); }
-.nurs497-w07-check-improvement-cycle .avatar.teal { background: var(--teal-deep); }
-.nurs497-w07-check-improvement-cycle .avatar.pink { background: var(--pink-deep); }
-.nurs497-w07-check-improvement-cycle .bubble { position: relative; background: var(--soft); border-radius: 4px 18px 18px 18px; padding: 0.8rem 1rem; font-weight: 600; }
-.nurs497-w07-check-improvement-cycle .bubble strong { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 800; }
-.nurs497-w07-check-improvement-cycle .bar {
+.nurs497-w03-main-safety-flags .flow-loop { margin: 0.6rem 0 0; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+.nurs497-w03-main-safety-flags .step-dot { display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 2px solid var(--line-strong); font-size: 0.78rem; font-weight: 800; margin-right: 0.4rem; }
+.nurs497-w03-main-safety-flags .matrix { display: grid; grid-template-columns: minmax(7rem, 0.7fr) repeat(var(--cols, 2), minmax(0, 1fr)); gap: 0.6rem; align-items: stretch; }
+.nurs497-w03-main-safety-flags .mx-col { font-size: 0.92rem; font-weight: 800; padding: 0.2rem 0.3rem; display: flex; align-items: flex-end; }
+.nurs497-w03-main-safety-flags .mx-row { font-size: 0.9rem; font-weight: 800; display: flex; align-items: center; padding-right: 0.3rem; }
+.nurs497-w03-main-safety-flags .matrix .bin { min-height: 6.25rem; }
+.nurs497-w03-main-safety-flags .matrix .bin-label { display: none; }
+.nurs497-w03-main-safety-flags .slots { list-style: none; margin: 0 0 1.1rem; padding: 0; display: grid; gap: 0.75rem; }
+.nurs497-w03-main-safety-flags .timeline .slots { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); position: relative; padding-top: 2.6rem; }
+.nurs497-w03-main-safety-flags .timeline .slots::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 1.05rem; height: 4px; border-radius: 4px; background: var(--line); }
+.nurs497-w03-main-safety-flags .timeline .slot { position: relative; }
+.nurs497-w03-main-safety-flags .timeline .node { position: absolute; top: -2.25rem; left: 50%; transform: translateX(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 3px solid var(--line-strong); }
+.nurs497-w03-main-safety-flags .timeline .era { position: absolute; top: -2.7rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--muted); white-space: nowrap; }
+.nurs497-w03-main-safety-flags .timeline .slot:first-child .era { left: auto; right: calc(50% + 1.1rem); }
+.nurs497-w03-main-safety-flags .slot .tile.is-empty { border-style: dashed; color: var(--muted); background: var(--soft); min-height: 5.5rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
+.nurs497-w03-main-safety-flags .timeline .slot .tile { min-height: 5.5rem; }
+.nurs497-w03-main-safety-flags .slot.c0 .node { background: var(--brand); border-color: var(--brand); }
+.nurs497-w03-main-safety-flags .slot.c1 .node { background: var(--teal); border-color: var(--teal); }
+.nurs497-w03-main-safety-flags .slot.c2 .node { background: var(--pink); border-color: var(--pink); }
+.nurs497-w03-main-safety-flags .slot.c3 .node { background: var(--amber); border-color: var(--amber); }
+.nurs497-w03-main-safety-flags .slot-label { font-size: 0.78rem; font-weight: 800; color: var(--muted); margin-bottom: 0.3rem; }
+.nurs497-w03-main-safety-flags .chain .slot { position: relative; }
+.nurs497-w03-main-safety-flags .chain .slot:not(:last-child)::after { content: ""; display: block; width: 3px; height: 0.75rem; margin: 0.35rem auto 0; background: var(--line-strong); border-radius: 3px; }
+.nurs497-w03-main-safety-flags .match { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.25rem; }
+.nurs497-w03-main-safety-flags .match-col { display: flex; flex-direction: column; gap: 0.55rem; }
+.nurs497-w03-main-safety-flags .tile.has-badge { display: flex; gap: 0.65rem; align-items: flex-start; }
+.nurs497-w03-main-safety-flags .badge { flex: none; width: 1.65rem; height: 1.65rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; background: var(--soft); color: var(--muted); border: 2px solid var(--line); }
+.nurs497-w03-main-safety-flags .badge.c0 { background: var(--brand); border-color: var(--brand); color: #fff; }
+.nurs497-w03-main-safety-flags .badge.c1 { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
+.nurs497-w03-main-safety-flags .badge.c2 { background: var(--pink-deep); border-color: var(--pink-deep); color: #fff; }
+.nurs497-w03-main-safety-flags .badge.c3 { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+.nurs497-w03-main-safety-flags .opts { display: grid; gap: 0.6rem; }
+.nurs497-w03-main-safety-flags .opt-key { flex: none; width: 1.8rem; height: 1.8rem; border-radius: 9px; border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; color: var(--muted); }
+.nurs497-w03-main-safety-flags .tile.is-sel .opt-key { border-color: var(--brand); color: var(--brand-deep); background: #fff; }
+.nurs497-w03-main-safety-flags .tile.is-ok .opt-key { border-color: var(--ok); color: var(--ok-deep); background: #fff; }
+.nurs497-w03-main-safety-flags .tile.is-bad .opt-key { border-color: var(--bad); color: var(--bad-deep); background: #fff; }
+.nurs497-w03-main-safety-flags .speaker { display: flex; gap: 0.85rem; align-items: flex-start; margin: 0 0 1.1rem; }
+.nurs497-w03-main-safety-flags .avatar { flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: var(--brand); }
+.nurs497-w03-main-safety-flags .avatar.teal { background: var(--teal-deep); }
+.nurs497-w03-main-safety-flags .avatar.pink { background: var(--pink-deep); }
+.nurs497-w03-main-safety-flags .bubble { position: relative; background: var(--soft); border-radius: 4px 18px 18px 18px; padding: 0.8rem 1rem; font-weight: 600; }
+.nurs497-w03-main-safety-flags .bubble strong { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 800; }
+.nurs497-w03-main-safety-flags .bar {
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   padding: 1.1rem 1.75rem; border-top: 2px solid var(--line); border-radius: 0 0 var(--radius) var(--radius);
   background: var(--card); transition: background-color 220ms var(--ease), border-color 220ms var(--ease);
 }
-.nurs497-w07-check-improvement-cycle .bar.ok { background: var(--ok-soft); border-top-color: var(--ok-line); }
-.nurs497-w07-check-improvement-cycle .bar.bad { background: var(--bad-soft); border-top-color: var(--bad-line); }
-.nurs497-w07-check-improvement-cycle .bar-msg { display: flex; gap: 0.8rem; align-items: flex-start; min-width: 0; flex: 1; }
-.nurs497-w07-check-improvement-cycle .bar-msg svg { width: 34px; height: 34px; flex: none; }
-.nurs497-w07-check-improvement-cycle .bar-msg strong { display: block; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
-.nurs497-w07-check-improvement-cycle .bar-msg p { margin: 0.15rem 0 0; font-size: 0.93rem; max-width: 72ch; }
-.nurs497-w07-check-improvement-cycle .bar.ok .bar-msg strong, .nurs497-w07-check-improvement-cycle .bar.ok .bar-msg p { color: var(--ok-deep); }
-.nurs497-w07-check-improvement-cycle .bar.bad .bar-msg strong, .nurs497-w07-check-improvement-cycle .bar.bad .bar-msg p { color: var(--bad-deep); }
-.nurs497-w07-check-improvement-cycle .bar-actions { display: flex; gap: 0.6rem; align-items: center; flex: none; }
-.nurs497-w07-check-improvement-cycle .cta {
+.nurs497-w03-main-safety-flags .bar.ok { background: var(--ok-soft); border-top-color: var(--ok-line); }
+.nurs497-w03-main-safety-flags .bar.bad { background: var(--bad-soft); border-top-color: var(--bad-line); }
+.nurs497-w03-main-safety-flags .bar-msg { display: flex; gap: 0.8rem; align-items: flex-start; min-width: 0; flex: 1; }
+.nurs497-w03-main-safety-flags .bar-msg svg { width: 34px; height: 34px; flex: none; }
+.nurs497-w03-main-safety-flags .bar-msg strong { display: block; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.nurs497-w03-main-safety-flags .bar-msg p { margin: 0.15rem 0 0; font-size: 0.93rem; max-width: 72ch; }
+.nurs497-w03-main-safety-flags .bar.ok .bar-msg strong, .nurs497-w03-main-safety-flags .bar.ok .bar-msg p { color: var(--ok-deep); }
+.nurs497-w03-main-safety-flags .bar.bad .bar-msg strong, .nurs497-w03-main-safety-flags .bar.bad .bar-msg p { color: var(--bad-deep); }
+.nurs497-w03-main-safety-flags .bar-actions { display: flex; gap: 0.6rem; align-items: center; flex: none; }
+.nurs497-w03-main-safety-flags .cta {
   font-weight: 800; font-size: 1rem; color: #fff; background: var(--brand); border: 0; border-bottom: 4px solid var(--brand-deep);
   border-radius: 14px; padding: 0.8rem 1.6rem; min-width: 9.5rem; min-height: 3.1rem; cursor: pointer;
   transition: transform 120ms var(--ease), background-color 160ms var(--ease);
 }
-.nurs497-w07-check-improvement-cycle .cta:hover { background: #6A50F7; }
-.nurs497-w07-check-improvement-cycle .cta:active { transform: translateY(2px); border-bottom-width: 2px; }
-.nurs497-w07-check-improvement-cycle .cta[disabled] { background: var(--line); color: #6B7185; border-bottom-color: var(--line-strong); cursor: not-allowed; transform: none; }
-.nurs497-w07-check-improvement-cycle .bar.ok .cta { background: var(--ok); border-bottom-color: var(--ok-deep); }
-.nurs497-w07-check-improvement-cycle .bar.bad .cta { background: var(--bad); border-bottom-color: var(--bad-deep); }
-.nurs497-w07-check-improvement-cycle .ghost { background: none; border: 0; padding: 0.6rem 0.4rem; font-weight: 800; font-size: 0.92rem; color: var(--bad-deep); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
-.nurs497-w07-check-improvement-cycle .btn {
+.nurs497-w03-main-safety-flags .cta:hover { background: #6A50F7; }
+.nurs497-w03-main-safety-flags .cta:active { transform: translateY(2px); border-bottom-width: 2px; }
+.nurs497-w03-main-safety-flags .cta[disabled] { background: var(--line); color: #6B7185; border-bottom-color: var(--line-strong); cursor: not-allowed; transform: none; }
+.nurs497-w03-main-safety-flags .bar.ok .cta { background: var(--ok); border-bottom-color: var(--ok-deep); }
+.nurs497-w03-main-safety-flags .bar.bad .cta { background: var(--bad); border-bottom-color: var(--bad-deep); }
+.nurs497-w03-main-safety-flags .ghost { background: none; border: 0; padding: 0.6rem 0.4rem; font-weight: 800; font-size: 0.92rem; color: var(--bad-deep); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.nurs497-w03-main-safety-flags .btn {
   font-weight: 800; font-size: 0.92rem; border-radius: 12px; padding: 0.6rem 1.1rem; min-height: 2.75rem; cursor: pointer;
   background: var(--card); color: var(--brand-deep); border: 2px solid var(--line); border-bottom-width: 4px;
 }
-.nurs497-w07-check-improvement-cycle .btn:hover { border-color: var(--brand); }
-.nurs497-w07-check-improvement-cycle .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); border-bottom-color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .row-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
-.nurs497-w07-check-improvement-cycle .done { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.25rem; align-items: center; background: linear-gradient(135deg, var(--brand-soft), var(--pink-soft)); border-radius: 20px; padding: 1.25rem 1.4rem; margin-bottom: 1.4rem; }
-.nurs497-w07-check-improvement-cycle .done svg { width: 84px; height: 84px; }
-.nurs497-w07-check-improvement-cycle .done-title { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
-.nurs497-w07-check-improvement-cycle .done-meta { margin: 0.2rem 0 0; font-weight: 700; color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .stars { display: flex; gap: 0.25rem; margin-top: 0.45rem; }
-.nurs497-w07-check-improvement-cycle .stars svg { width: 26px; height: 26px; }
-.nurs497-w07-check-improvement-cycle label { display: block; font-weight: 800; margin: 0 0 0.4rem; }
-.nurs497-w07-check-improvement-cycle textarea {
+.nurs497-w03-main-safety-flags .btn:hover { border-color: var(--brand); }
+.nurs497-w03-main-safety-flags .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); border-bottom-color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .row-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
+.nurs497-w03-main-safety-flags .done { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.25rem; align-items: center; background: linear-gradient(135deg, var(--brand-soft), var(--pink-soft)); border-radius: 20px; padding: 1.25rem 1.4rem; margin-bottom: 1.4rem; }
+.nurs497-w03-main-safety-flags .done svg { width: 84px; height: 84px; }
+.nurs497-w03-main-safety-flags .done-title { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.nurs497-w03-main-safety-flags .done-meta { margin: 0.2rem 0 0; font-weight: 700; color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .stars { display: flex; gap: 0.25rem; margin-top: 0.45rem; }
+.nurs497-w03-main-safety-flags .stars svg { width: 26px; height: 26px; }
+.nurs497-w03-main-safety-flags label { display: block; font-weight: 800; margin: 0 0 0.4rem; }
+.nurs497-w03-main-safety-flags textarea {
   width: 100%; min-height: 8rem; font-family: inherit; font-size: 1rem; color: var(--ink); caret-color: var(--brand);
   background: var(--card); border: 2px solid var(--line); border-radius: 14px; padding: 0.85rem 1rem; resize: vertical; line-height: 1.5;
 }
-.nurs497-w07-check-improvement-cycle textarea:focus { border-color: var(--brand); }
-.nurs497-w07-check-improvement-cycle .note { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin: 0.8rem 0 0; }
-.nurs497-w07-check-improvement-cycle .foot { text-align: center; color: var(--muted); font-size: 0.8rem; margin: 1rem 0 0; }
-.nurs497-w07-check-improvement-cycle .hidden { display: none !important; }
-.nurs497-w07-check-improvement-cycle .sr-live { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-@keyframes nurs497-w07-check-improvement-cycle-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
-@keyframes nurs497-w07-check-improvement-cycle-rise { 0% { opacity: 0; transform: translateY(6px); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-18px); } }
-@keyframes nurs497-w07-check-improvement-cycle-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
-@keyframes nurs497-w07-check-improvement-cycle-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.nurs497-w07-check-improvement-cycle .stage-in { animation: nurs497-w07-check-improvement-cycle-in 360ms var(--ease); }
+.nurs497-w03-main-safety-flags textarea:focus { border-color: var(--brand); }
+.nurs497-w03-main-safety-flags .note { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin: 0.8rem 0 0; }
+.nurs497-w03-main-safety-flags .foot { text-align: center; color: var(--muted); font-size: 0.8rem; margin: 1rem 0 0; }
+.nurs497-w03-main-safety-flags .hidden { display: none !important; }
+.nurs497-w03-main-safety-flags .sr-live { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@keyframes nurs497-w03-main-safety-flags-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
+@keyframes nurs497-w03-main-safety-flags-rise { 0% { opacity: 0; transform: translateY(6px); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-18px); } }
+@keyframes nurs497-w03-main-safety-flags-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+@keyframes nurs497-w03-main-safety-flags-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.nurs497-w03-main-safety-flags .stage-in { animation: nurs497-w03-main-safety-flags-in 360ms var(--ease); }
 @media (max-width: 720px) {
-  .nurs497-w07-check-improvement-cycle .lhead { flex-direction: column; padding: 1.25rem 1.1rem 0.75rem; }
-  .nurs497-w07-check-improvement-cycle .grade-note { padding-left: 1.1rem; padding-right: 1.1rem; }
-  .nurs497-w07-check-improvement-cycle .prog, .nurs497-w07-check-improvement-cycle .viz { padding-left: 1.1rem; padding-right: 1.1rem; }
-  .nurs497-w07-check-improvement-cycle .stage { padding: 1.1rem 1.1rem 1.4rem; }
-  .nurs497-w07-check-improvement-cycle .bar { flex-direction: column; align-items: stretch; padding: 1rem 1.1rem; }
-  .nurs497-w07-check-improvement-cycle .bar-actions { flex-direction: column-reverse; align-items: stretch; }
-  .nurs497-w07-check-improvement-cycle .cta { width: 100%; }
-  .nurs497-w07-check-improvement-cycle .bins, .nurs497-w07-check-improvement-cycle .flow { grid-template-columns: 1fr; }
-  .nurs497-w07-check-improvement-cycle .flow .binwrap:not(:last-child)::after { display: none; }
-  .nurs497-w07-check-improvement-cycle .match { grid-template-columns: 1fr; }
-  .nurs497-w07-check-improvement-cycle .timeline .slots { grid-template-columns: 1fr; padding-top: 0; padding-left: 2.4rem; }
-  .nurs497-w07-check-improvement-cycle .timeline .slots::before { left: 0.9rem; right: auto; top: 0.5rem; bottom: 0.5rem; width: 4px; height: auto; }
-  .nurs497-w07-check-improvement-cycle .timeline .node { top: 1.6rem; left: -1.95rem; transform: none; }
-  .nurs497-w07-check-improvement-cycle .timeline .era { position: static; display: block; margin-bottom: 0.25rem; }
-  .nurs497-w07-check-improvement-cycle .matrix { grid-template-columns: 1fr; }
-  .nurs497-w07-check-improvement-cycle .mx-col, .nurs497-w07-check-improvement-cycle .mx-row, .nurs497-w07-check-improvement-cycle .mx-corner { display: none; }
-  .nurs497-w07-check-improvement-cycle .matrix .bin-label { display: block; }
-  .nurs497-w07-check-improvement-cycle .done { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .nurs497-w03-main-safety-flags .lhead { flex-direction: column; padding: 1.25rem 1.1rem 0.75rem; }
+  .nurs497-w03-main-safety-flags .grade-note { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .nurs497-w03-main-safety-flags .prog, .nurs497-w03-main-safety-flags .viz { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .nurs497-w03-main-safety-flags .stage { padding: 1.1rem 1.1rem 1.4rem; }
+  .nurs497-w03-main-safety-flags .bar { flex-direction: column; align-items: stretch; padding: 1rem 1.1rem; }
+  .nurs497-w03-main-safety-flags .bar-actions { flex-direction: column-reverse; align-items: stretch; }
+  .nurs497-w03-main-safety-flags .cta { width: 100%; }
+  .nurs497-w03-main-safety-flags .bins, .nurs497-w03-main-safety-flags .flow { grid-template-columns: 1fr; }
+  .nurs497-w03-main-safety-flags .flow .binwrap:not(:last-child)::after { display: none; }
+  .nurs497-w03-main-safety-flags .match { grid-template-columns: 1fr; }
+  .nurs497-w03-main-safety-flags .timeline .slots { grid-template-columns: 1fr; padding-top: 0; padding-left: 2.4rem; }
+  .nurs497-w03-main-safety-flags .timeline .slots::before { left: 0.9rem; right: auto; top: 0.5rem; bottom: 0.5rem; width: 4px; height: auto; }
+  .nurs497-w03-main-safety-flags .timeline .node { top: 1.6rem; left: -1.95rem; transform: none; }
+  .nurs497-w03-main-safety-flags .timeline .era { position: static; display: block; margin-bottom: 0.25rem; }
+  .nurs497-w03-main-safety-flags .matrix { grid-template-columns: 1fr; }
+  .nurs497-w03-main-safety-flags .mx-col, .nurs497-w03-main-safety-flags .mx-row, .nurs497-w03-main-safety-flags .mx-corner { display: none; }
+  .nurs497-w03-main-safety-flags .matrix .bin-label { display: block; }
+  .nurs497-w03-main-safety-flags .done { grid-template-columns: 1fr; text-align: center; justify-items: center; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .nurs497-w07-check-improvement-cycle *, .nurs497-w07-check-improvement-cycle *::before, .nurs497-w07-check-improvement-cycle *::after { animation: none !important; transition: none !important; }
+  .nurs497-w03-main-safety-flags *, .nurs497-w03-main-safety-flags *::before, .nurs497-w03-main-safety-flags *::after { animation: none !important; transition: none !important; }
 }
 @media print {
-  .nurs497-w07-check-improvement-cycle .bar, .nurs497-w07-check-improvement-cycle .row-actions, .nurs497-w07-check-improvement-cycle .prog { display: none !important; }
-  .nurs497-w07-check-improvement-cycle .lesson { box-shadow: none; }
+  .nurs497-w03-main-safety-flags .bar, .nurs497-w03-main-safety-flags .row-actions, .nurs497-w03-main-safety-flags .prog { display: none !important; }
+  .nurs497-w03-main-safety-flags .lesson { box-shadow: none; }
 }
-.nurs497-w07-check-improvement-cycle .case { margin: 0 1.75rem 1rem; padding: 1rem 1.2rem; border-radius: 18px; background: linear-gradient(135deg, var(--brand-soft), var(--teal-soft)); display: grid; gap: 0.85rem; }
-.nurs497-w07-check-improvement-cycle .case-tag { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .case p { margin: 0.25rem 0 0; font-weight: 600; max-width: 78ch; }
-.nurs497-w07-check-improvement-cycle .cast { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
-.nurs497-w07-check-improvement-cycle .cast li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; line-height: 1.25; }
-.nurs497-w07-check-improvement-cycle .cast strong { display: block; font-weight: 800; }
-.nurs497-w07-check-improvement-cycle .cast-role { color: var(--muted); font-weight: 600; }
-.nurs497-w07-check-improvement-cycle .avatar.sm { width: 2.2rem; height: 2.2rem; font-size: 0.78rem; }
-.nurs497-w07-check-improvement-cycle .avatar.amber { background: var(--amber-deep); }
-.nurs497-w07-check-improvement-cycle .pcard-sub { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; }
-.nurs497-w07-check-improvement-cycle .prog-text { min-width: 5.5rem; }
-@media (max-width: 720px) { .nurs497-w07-check-improvement-cycle .case { margin: 0 1.1rem 1rem; } }
-.nurs497-w07-check-improvement-cycle .netlab { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
-.nurs497-w07-check-improvement-cycle .net { background: var(--soft); border-radius: 20px; padding: 0.5rem; }
-.nurs497-w07-check-improvement-cycle .net svg { display: block; width: 100%; height: auto; max-height: 440px; }
-@media (max-width: 860px) { .nurs497-w07-check-improvement-cycle .netlab { grid-template-columns: 1fr; } }
-.nurs497-w07-check-improvement-cycle .net-stats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
-.nurs497-w07-check-improvement-cycle .stat { font-size: 0.85rem; font-weight: 800; border-radius: 999px; padding: 0.3rem 0.8rem; background: var(--soft); }
-.nurs497-w07-check-improvement-cycle .stat.good { background: var(--ok-soft); color: var(--ok-deep); }
-.nurs497-w07-check-improvement-cycle .stat.warn { background: var(--bad-soft); color: var(--bad-deep); }
-.nurs497-w07-check-improvement-cycle .moves { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
-.nurs497-w07-check-improvement-cycle .moves .tile { display: flex; gap: 0.7rem; align-items: center; }
-.nurs497-w07-check-improvement-cycle .toggle { flex: none; width: 2.6rem; height: 1.5rem; border-radius: 999px; background: var(--line-strong); position: relative; transition: background-color 160ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .toggle::after { content: ""; position: absolute; top: 3px; left: 3px; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: #fff; transition: transform 200ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .tile[aria-pressed="true"] .toggle { background: var(--brand); }
-.nurs497-w07-check-improvement-cycle .tile[aria-pressed="true"] .toggle::after { transform: translateX(1.1rem); }
-@media (max-width: 720px) { .nurs497-w07-check-improvement-cycle .moves { grid-template-columns: 1fr; } }
-.nurs497-w07-check-improvement-cycle .xw-wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.6rem; align-items: start; }
-.nurs497-w07-check-improvement-cycle .xw { --cell: clamp(1.7rem, calc((100vw - 5rem) / var(--cols)), 2.55rem); display: grid; grid-template-columns: repeat(var(--cols), var(--cell)); grid-auto-rows: var(--cell); gap: 3px; }
-.nurs497-w07-check-improvement-cycle .xw-blank { border-radius: 6px; }
-.nurs497-w07-check-improvement-cycle .xw-cell { position: relative; border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 2px var(--line-strong); transition: background-color 160ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .xw-cell.is-word { background: var(--brand-soft); box-shadow: inset 0 0 0 2px var(--brand); }
-.nurs497-w07-check-improvement-cycle .xw-cell.is-ok { background: var(--ok-soft); box-shadow: inset 0 0 0 2px var(--ok); }
-.nurs497-w07-check-improvement-cycle .xw-cell.is-bad { background: var(--bad-soft); box-shadow: inset 0 0 0 2px var(--bad); }
-.nurs497-w07-check-improvement-cycle .xw-cell.is-hint input { color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .xw-cell input { width: 100%; height: 100%; border: 0; background: transparent; text-align: center; font-family: inherit; font-weight: 800; font-size: calc(var(--cell) * 0.46); color: var(--ink); text-transform: uppercase; caret-color: var(--brand); padding: 0; border-radius: 8px; }
-.nurs497-w07-check-improvement-cycle .xw-cell input:focus-visible { outline: 3px solid var(--brand); outline-offset: 1px; }
-.nurs497-w07-check-improvement-cycle .xw-num { position: absolute; top: 2px; left: 4px; font-size: 0.6rem; font-weight: 800; color: var(--muted); pointer-events: none; }
-.nurs497-w07-check-improvement-cycle .clues { display: grid; gap: 1.1rem; }
-.nurs497-w07-check-improvement-cycle .clue-group { display: grid; gap: 0.25rem; }
-.nurs497-w07-check-improvement-cycle .clue { display: flex; gap: 0.6rem; text-align: left; width: 100%; font-size: 0.9rem; line-height: 1.45; color: var(--ink); background: transparent; border: 0; border-radius: 10px; padding: 0.45rem 0.55rem; cursor: pointer; font-weight: 600; }
-.nurs497-w07-check-improvement-cycle .clue:hover { background: var(--soft); }
-.nurs497-w07-check-improvement-cycle .clue.is-on { background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .clue em { font-style: normal; color: var(--muted); }
-.nurs497-w07-check-improvement-cycle .clue-n { flex: none; min-width: 1.4rem; font-weight: 800; }
-@media (max-width: 860px) { .nurs497-w07-check-improvement-cycle .xw-wrap { grid-template-columns: 1fr; } }
-.nurs497-w07-check-improvement-cycle .brief { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 0.95rem 1.1rem; margin: 0 0 1.1rem; }
-.nurs497-w07-check-improvement-cycle .brief svg { width: 34px; height: 34px; flex: none; }
-.nurs497-w07-check-improvement-cycle .brief p { margin: 0; font-size: 0.93rem; color: var(--ink); }
-.nurs497-w07-check-improvement-cycle .brief strong { display: block; color: var(--brand-deep); font-size: 0.85rem; }
-.nurs497-w07-check-improvement-cycle .progs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
-.nurs497-w07-check-improvement-cycle .pcard { background: var(--soft); border-radius: 18px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
-.nurs497-w07-check-improvement-cycle .pcard-head { display: flex; gap: 0.6rem; align-items: center; }
-.nurs497-w07-check-improvement-cycle .pcard-head svg { width: 38px; height: 38px; flex: none; }
-.nurs497-w07-check-improvement-cycle .pcard-name { font-weight: 800; font-size: 0.92rem; line-height: 1.3; }
-.nurs497-w07-check-improvement-cycle .people { display: flex; flex-wrap: wrap; gap: 4px; min-height: 34px; }
-.nurs497-w07-check-improvement-cycle .people svg { width: 22px; height: 30px; transition: opacity 400ms var(--ease), transform 400ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .people svg.gone { opacity: 0.35; transform: translateY(4px); }
-.nurs497-w07-check-improvement-cycle .pmeta { font-size: 0.85rem; font-weight: 700; }
-.nurs497-w07-check-improvement-cycle .chip { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 800; border-radius: 999px; padding: 0.22rem 0.6rem; background: #fff; }
-.nurs497-w07-check-improvement-cycle .chip.yes { color: var(--ok-deep); background: var(--ok-soft); }
-.nurs497-w07-check-improvement-cycle .chip.no { color: var(--bad-deep); background: var(--bad-soft); }
-.nurs497-w07-check-improvement-cycle .chip.wait { color: var(--muted); }
-.nurs497-w07-check-improvement-cycle .levers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
-.nurs497-w07-check-improvement-cycle .levers .tile { display: flex; gap: 0.7rem; align-items: flex-start; }
-.nurs497-w07-check-improvement-cycle .check-box { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 7px; border: 2px solid var(--line-strong); background: #fff; margin-top: 0.1rem; display: inline-flex; align-items: center; justify-content: center; }
-.nurs497-w07-check-improvement-cycle .tile[aria-pressed="true"] .check-box { background: var(--brand); border-color: var(--brand); }
-.nurs497-w07-check-improvement-cycle .tile[aria-pressed="true"] .check-box::after { content: ""; width: 0.45rem; height: 0.8rem; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg) translate(-1px, -1px); }
-.nurs497-w07-check-improvement-cycle .meter { display: flex; align-items: center; gap: 0.8rem; margin: 0.2rem 0 1rem; }
-.nurs497-w07-check-improvement-cycle .meter-track { flex: 1; height: 14px; border-radius: 999px; background: var(--soft); position: relative; overflow: hidden; }
-.nurs497-w07-check-improvement-cycle .meter-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--teal), var(--brand)); transition: width 600ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .meter-goal { position: absolute; top: -3px; bottom: -3px; width: 3px; background: var(--ink); border-radius: 2px; }
-.nurs497-w07-check-improvement-cycle .meter-num { font-weight: 800; font-variant-numeric: tabular-nums; min-width: 5.5rem; text-align: right; }
-.nurs497-w07-check-improvement-cycle .model-note { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin: 0 0 0.8rem; }
-.nurs497-w07-check-improvement-cycle .dots { display: grid; grid-template-columns: repeat(5, 18px); gap: 6px; }
-.nurs497-w07-check-improvement-cycle .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px dashed var(--line-strong); background: #fff; transition: background-color 360ms var(--ease), border-color 360ms var(--ease); }
-.nurs497-w07-check-improvement-cycle .dot.on { border: 2px solid var(--teal-deep); background: var(--teal); }
-.nurs497-w07-check-improvement-cycle .radio-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
-.nurs497-w07-check-improvement-cycle .radio-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.nurs497-w07-check-improvement-cycle .run { margin-bottom: 1rem; }
+.nurs497-w03-main-safety-flags .case { margin: 0 1.75rem 1rem; padding: 1rem 1.2rem; border-radius: 18px; background: linear-gradient(135deg, var(--brand-soft), var(--teal-soft)); display: grid; gap: 0.85rem; }
+.nurs497-w03-main-safety-flags .case-tag { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .case p { margin: 0.25rem 0 0; font-weight: 600; max-width: 78ch; }
+.nurs497-w03-main-safety-flags .cast { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
+.nurs497-w03-main-safety-flags .cast li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; line-height: 1.25; }
+.nurs497-w03-main-safety-flags .cast strong { display: block; font-weight: 800; }
+.nurs497-w03-main-safety-flags .cast-role { color: var(--muted); font-weight: 600; }
+.nurs497-w03-main-safety-flags .avatar.sm { width: 2.2rem; height: 2.2rem; font-size: 0.78rem; }
+.nurs497-w03-main-safety-flags .avatar.amber { background: var(--amber-deep); }
+.nurs497-w03-main-safety-flags .pcard-sub { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; }
+.nurs497-w03-main-safety-flags .prog-text { min-width: 5.5rem; }
+@media (max-width: 720px) { .nurs497-w03-main-safety-flags .case { margin: 0 1.1rem 1rem; } }
+.nurs497-w03-main-safety-flags .netlab { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.nurs497-w03-main-safety-flags .net { background: var(--soft); border-radius: 20px; padding: 0.5rem; }
+.nurs497-w03-main-safety-flags .net svg { display: block; width: 100%; height: auto; max-height: 440px; }
+@media (max-width: 860px) { .nurs497-w03-main-safety-flags .netlab { grid-template-columns: 1fr; } }
+.nurs497-w03-main-safety-flags .net-stats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
+.nurs497-w03-main-safety-flags .stat { font-size: 0.85rem; font-weight: 800; border-radius: 999px; padding: 0.3rem 0.8rem; background: var(--soft); }
+.nurs497-w03-main-safety-flags .stat.good { background: var(--ok-soft); color: var(--ok-deep); }
+.nurs497-w03-main-safety-flags .stat.warn { background: var(--bad-soft); color: var(--bad-deep); }
+.nurs497-w03-main-safety-flags .moves { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+.nurs497-w03-main-safety-flags .moves .tile { display: flex; gap: 0.7rem; align-items: center; }
+.nurs497-w03-main-safety-flags .toggle { flex: none; width: 2.6rem; height: 1.5rem; border-radius: 999px; background: var(--line-strong); position: relative; transition: background-color 160ms var(--ease); }
+.nurs497-w03-main-safety-flags .toggle::after { content: ""; position: absolute; top: 3px; left: 3px; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: #fff; transition: transform 200ms var(--ease); }
+.nurs497-w03-main-safety-flags .tile[aria-pressed="true"] .toggle { background: var(--brand); }
+.nurs497-w03-main-safety-flags .tile[aria-pressed="true"] .toggle::after { transform: translateX(1.1rem); }
+@media (max-width: 720px) { .nurs497-w03-main-safety-flags .moves { grid-template-columns: 1fr; } }
+.nurs497-w03-main-safety-flags .xw-wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.6rem; align-items: start; }
+.nurs497-w03-main-safety-flags .xw { --cell: clamp(1.7rem, calc((100vw - 5rem) / var(--cols)), 2.55rem); display: grid; grid-template-columns: repeat(var(--cols), var(--cell)); grid-auto-rows: var(--cell); gap: 3px; }
+.nurs497-w03-main-safety-flags .xw-blank { border-radius: 6px; }
+.nurs497-w03-main-safety-flags .xw-cell { position: relative; border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 2px var(--line-strong); transition: background-color 160ms var(--ease); }
+.nurs497-w03-main-safety-flags .xw-cell.is-word { background: var(--brand-soft); box-shadow: inset 0 0 0 2px var(--brand); }
+.nurs497-w03-main-safety-flags .xw-cell.is-ok { background: var(--ok-soft); box-shadow: inset 0 0 0 2px var(--ok); }
+.nurs497-w03-main-safety-flags .xw-cell.is-bad { background: var(--bad-soft); box-shadow: inset 0 0 0 2px var(--bad); }
+.nurs497-w03-main-safety-flags .xw-cell.is-hint input { color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .xw-cell input { width: 100%; height: 100%; border: 0; background: transparent; text-align: center; font-family: inherit; font-weight: 800; font-size: calc(var(--cell) * 0.46); color: var(--ink); text-transform: uppercase; caret-color: var(--brand); padding: 0; border-radius: 8px; }
+.nurs497-w03-main-safety-flags .xw-cell input:focus-visible { outline: 3px solid var(--brand); outline-offset: 1px; }
+.nurs497-w03-main-safety-flags .xw-num { position: absolute; top: 2px; left: 4px; font-size: 0.6rem; font-weight: 800; color: var(--muted); pointer-events: none; }
+.nurs497-w03-main-safety-flags .clues { display: grid; gap: 1.1rem; }
+.nurs497-w03-main-safety-flags .clue-group { display: grid; gap: 0.25rem; }
+.nurs497-w03-main-safety-flags .clue { display: flex; gap: 0.6rem; text-align: left; width: 100%; font-size: 0.9rem; line-height: 1.45; color: var(--ink); background: transparent; border: 0; border-radius: 10px; padding: 0.45rem 0.55rem; cursor: pointer; font-weight: 600; }
+.nurs497-w03-main-safety-flags .clue:hover { background: var(--soft); }
+.nurs497-w03-main-safety-flags .clue.is-on { background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .clue em { font-style: normal; color: var(--muted); }
+.nurs497-w03-main-safety-flags .clue-n { flex: none; min-width: 1.4rem; font-weight: 800; }
+@media (max-width: 860px) { .nurs497-w03-main-safety-flags .xw-wrap { grid-template-columns: 1fr; } }
+.nurs497-w03-main-safety-flags .brief { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 0.95rem 1.1rem; margin: 0 0 1.1rem; }
+.nurs497-w03-main-safety-flags .brief svg { width: 34px; height: 34px; flex: none; }
+.nurs497-w03-main-safety-flags .brief p { margin: 0; font-size: 0.93rem; color: var(--ink); }
+.nurs497-w03-main-safety-flags .brief strong { display: block; color: var(--brand-deep); font-size: 0.85rem; }
+.nurs497-w03-main-safety-flags .progs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+.nurs497-w03-main-safety-flags .pcard { background: var(--soft); border-radius: 18px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.nurs497-w03-main-safety-flags .pcard-head { display: flex; gap: 0.6rem; align-items: center; }
+.nurs497-w03-main-safety-flags .pcard-head svg { width: 38px; height: 38px; flex: none; }
+.nurs497-w03-main-safety-flags .pcard-name { font-weight: 800; font-size: 0.92rem; line-height: 1.3; }
+.nurs497-w03-main-safety-flags .people { display: flex; flex-wrap: wrap; gap: 4px; min-height: 34px; }
+.nurs497-w03-main-safety-flags .people svg { width: 22px; height: 30px; transition: opacity 400ms var(--ease), transform 400ms var(--ease); }
+.nurs497-w03-main-safety-flags .people svg.gone { opacity: 0.35; transform: translateY(4px); }
+.nurs497-w03-main-safety-flags .pmeta { font-size: 0.85rem; font-weight: 700; }
+.nurs497-w03-main-safety-flags .chip { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 800; border-radius: 999px; padding: 0.22rem 0.6rem; background: #fff; }
+.nurs497-w03-main-safety-flags .chip.yes { color: var(--ok-deep); background: var(--ok-soft); }
+.nurs497-w03-main-safety-flags .chip.no { color: var(--bad-deep); background: var(--bad-soft); }
+.nurs497-w03-main-safety-flags .chip.wait { color: var(--muted); }
+.nurs497-w03-main-safety-flags .levers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
+.nurs497-w03-main-safety-flags .levers .tile { display: flex; gap: 0.7rem; align-items: flex-start; }
+.nurs497-w03-main-safety-flags .check-box { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 7px; border: 2px solid var(--line-strong); background: #fff; margin-top: 0.1rem; display: inline-flex; align-items: center; justify-content: center; }
+.nurs497-w03-main-safety-flags .tile[aria-pressed="true"] .check-box { background: var(--brand); border-color: var(--brand); }
+.nurs497-w03-main-safety-flags .tile[aria-pressed="true"] .check-box::after { content: ""; width: 0.45rem; height: 0.8rem; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg) translate(-1px, -1px); }
+.nurs497-w03-main-safety-flags .meter { display: flex; align-items: center; gap: 0.8rem; margin: 0.2rem 0 1rem; }
+.nurs497-w03-main-safety-flags .meter-track { flex: 1; height: 14px; border-radius: 999px; background: var(--soft); position: relative; overflow: hidden; }
+.nurs497-w03-main-safety-flags .meter-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--teal), var(--brand)); transition: width 600ms var(--ease); }
+.nurs497-w03-main-safety-flags .meter-goal { position: absolute; top: -3px; bottom: -3px; width: 3px; background: var(--ink); border-radius: 2px; }
+.nurs497-w03-main-safety-flags .meter-num { font-weight: 800; font-variant-numeric: tabular-nums; min-width: 5.5rem; text-align: right; }
+.nurs497-w03-main-safety-flags .model-note { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin: 0 0 0.8rem; }
+.nurs497-w03-main-safety-flags .dots { display: grid; grid-template-columns: repeat(5, 18px); gap: 6px; }
+.nurs497-w03-main-safety-flags .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px dashed var(--line-strong); background: #fff; transition: background-color 360ms var(--ease), border-color 360ms var(--ease); }
+.nurs497-w03-main-safety-flags .dot.on { border: 2px solid var(--teal-deep); background: var(--teal); }
+.nurs497-w03-main-safety-flags .radio-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
+.nurs497-w03-main-safety-flags .radio-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nurs497-w03-main-safety-flags .run { margin-bottom: 1rem; }
 @media (max-width: 720px) {
-  .nurs497-w07-check-improvement-cycle .progs, .nurs497-w07-check-improvement-cycle .levers, .nurs497-w07-check-improvement-cycle .radio-row, .nurs497-w07-check-improvement-cycle .radio-row.four { grid-template-columns: 1fr; }
+  .nurs497-w03-main-safety-flags .progs, .nurs497-w03-main-safety-flags .levers, .nurs497-w03-main-safety-flags .radio-row, .nurs497-w03-main-safety-flags .radio-row.four { grid-template-columns: 1fr; }
 }
-.nurs497-w07-check-improvement-cycle .based { margin: 0 0 1rem; padding: 0.6rem 0.9rem; border-left: 3px solid var(--brand); background: var(--brand-soft); border-radius: 0 10px 10px 0; font-size: 0.86rem; font-weight: 700; color: var(--brand-deep); }
-.nurs497-w07-check-improvement-cycle .based span { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; margin-top: 0.1rem; }
+.nurs497-w03-main-safety-flags .based { margin: 0 0 1rem; padding: 0.6rem 0.9rem; border-left: 3px solid var(--brand); background: var(--brand-soft); border-radius: 0 10px 10px 0; font-size: 0.86rem; font-weight: 700; color: var(--brand-deep); }
+.nurs497-w03-main-safety-flags .based span { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; margin-top: 0.1rem; }
 
 
 
   </style>
 </head>
 <body>
-  <div class="nurs497-w07-check-improvement-cycle">
+  <div class="nurs497-w03-main-safety-flags">
     <div class="lesson">
       <p class="grade-note">This is ungraded practice.</p>
       <header class="lhead">
         <div>
-          <h1>Run the Improvement Cycle</h1>
-          <p class="lsub">Put an improvement cycle in working order, then decide what a disappointing first test means.</p>
-          <div class="pills"><span class="pill">CSLO E</span></div>
+          <h1>What the Safety Plan Leaves Out</h1>
+          <p class="lsub">Read one unit&#x27;s safety effort the way a root-cause analysis would, and mark what does not yet protect anyone.</p>
+          <div class="pills"><span class="pill">MLO 3.1-3.3</span></div>
         </div>
       </header>
-      <p class="based">Based on Stratis Health (2023), QI Basics: Introduction to Quality Improvement, Processes and Systems<span>Change the process, test it on a small scale, and study the measure before you spread it</span></p>
       <section class="case" aria-label="Your role in this case">
-        <div><p>Quality problems live in processes and systems, not in a single nurse who &quot;should have been more careful.&quot; The cycle is how you change a process, on a small scale, and find out whether the change worked before you spread it.</p></div>
+        <div><p>Module 3 asks you to judge safety and quality efforts in your mentor&#x27;s setting, name the barriers that keep them from working, and scope a quality-improvement project with a problem, causes, and a measurable aim.</p></div>
       </section>
       <div class="prog"><span class="prog-text" id="progText">Step 1</span><div class="prog-track"><span class="prog-fill" id="progFill"></span></div></div>
       <section class="stage" id="stage" aria-live="off"></section>
@@ -384,70 +383,103 @@
     </div>
     <p class="foot">This is ungraded practice.</p>
     <div class="sr-live" aria-live="polite" aria-atomic="true"></div>
-    <noscript><p>This check asks you to order an improvement cycle from naming the process through acting on the result, choose what to do when the first test disappoints, and write the process and the measure for your capstone.</p></noscript>
+    <noscript><p>This activity asks you to find the weak point in a workplace-safety effort, sort contributing factors into people, process, technology, and policy, choose an aim that could be measured, and draft a problem statement for the Module 3 assignment.</p></noscript>
   </div>
   <script>
-window.nurs497_w07_check_improvement_cycle = {
-  key: "nurs497-w07-check-improvement-cycle",
+window.nurs497_w03_main_safety_flags = {
+  key: "nurs497-w03-main-safety-flags",
   steps: [
     {
-      type: "order",
-      layout: "chain",
-      title: "Order the cycle",
-      help: "Tap a step to place it. The first step comes first. Tap a placed step to take it back.",
-      hint: "You cannot study a result you have not produced, and you should not spread a change you have not studied.",
-      retryHint: "Naming the process comes before planning the change. Acting on the result comes last, and then the cycle runs again.",
-      poolLabel: "Steps in one improvement cycle",
-      items: [
-        { id: "name", text: "Name the process: the series of steps, not the person you wish had tried harder" },
-        { id: "plan", text: "Plan one small change to that process, and the measure you will watch" },
-        { id: "do", text: "Do the change on a small scale" },
-        { id: "study", text: "Study the measure against what you expected" },
-        { id: "act", text: "Act: adopt the change, adapt it, or abandon it, then run the cycle again" }
+      type: "choice",
+      title: "Which effort actually reduces the hazard?",
+      help: "Nurses on the night shift have been threatened in the parking lot twice this month. The unit posted a sign that says Be aware of your surroundings. Choose the response that matches the hazard.",
+      hint: "OSHA's healthcare workplace-violence guidance treats violence as a hazard to control, not as a reminder to try harder.",
+      retryHint: "A sign can announce a danger. Ask whether anyone is safer because of it.",
+      options: [
+        {
+          text: "Escort staff to their cars after dark and put a working alarm where the threats happened.",
+          ok: true,
+          fb: "The hazard is an assault risk in a specific place and time. The response changes that exposure. That is a strategy, not a slogan."
+        },
+        {
+          text: "Leave the sign up and remind staff at huddle to be careful.",
+          ok: false,
+          fb: "The sign and the reminder repeat the same advice. They do not change the parking lot."
+        },
+        {
+          text: "Tell night staff that violence is part of the job in this neighborhood.",
+          ok: false,
+          fb: "Calling violence normal is how a hazard stays uncontrolled. The module's workplace-safety readings treat it as preventable."
+        },
+        {
+          text: "Move the quality board to the break room so more people see the fall data.",
+          ok: false,
+          fb: "Fall data may matter on this unit. They are not the hazard in this scene."
+        }
       ],
-      answer: ["name", "plan", "do", "study", "act"],
-      missHint: "Spreading the change is not a step in this list. You only earn that after the measure says the small test worked.",
-      explain: "A process is a series of steps. A system is the set of processes that touch each other, so a change in one step moves the others. Reminding one nurse to be more careful leaves the process untouched, and the same failure returns on the next shift. The cycle tests one change on a small scale, compares the measure with what you predicted, and only then adopts, adapts, or abandons it. Your capstone's implementation and measurement sections are this cycle, written out."
+      explain: "MLO 3.2 asks you to analyze workplace safety strategies and how well they mitigate hazards. A strategy that does not change the exposure has not mitigated anything. The discussion also asks what organizational barriers keep a real strategy from working."
+    },
+    {
+      type: "sort",
+      title: "Sort the causes, not the blame",
+      help: "The same unit also has late antibiotics. Tap each contributing factor, then tap the cause group it belongs in.",
+      hint: "The assignment's root-cause tools, a fishbone or the 5 Whys, separate systemic, operational, and technology factors. A person hurrying is not the whole cause.",
+      retryHint: "If a policy or a missing alert would still produce the delay with a different nurse, it is not a people cause.",
+      poolLabel: "What staff named in the review",
+      bins: [
+        { id: "people", label: "People", sub: "What a person did or did not know" },
+        { id: "process", label: "Process", sub: "How the work is sequenced" },
+        { id: "tech", label: "Technology", sub: "What the record or alert does" },
+        { id: "policy", label: "Policy", sub: "The rule that makes the gap likely" }
+      ],
+      items: [
+        { id: "c1", text: "The new nurse did not know which antibiotic was first-line", bin: "people" },
+        { id: "c2", text: "The order sits in a queue until the note is signed, so the clock starts late", bin: "process" },
+        { id: "c3", text: "The alert fires only after the dose is already late", bin: "tech" },
+        { id: "c4", text: "Night pharmacy closes, and no policy covers how the first dose is obtained", bin: "policy" }
+      ],
+      missHint: "A closed pharmacy is a rule about how the building runs. It is not a knowledge gap in one nurse.",
+      explain: "A root-cause analysis is how MLO 3.1 and MLO 3.3 get specific. Client safety and quality fail in more than one place at once. The proposal has to say which causes the intervention will touch, including the technology you already audited."
     },
     {
       type: "choice",
-      title: "The first test disappointed you. Now what?",
-      help: "Return visits went up, not down, after a one-week test on one shift. Choose the next move.",
-      hint: "Study is a step, not a verdict on the staff. Read the result before you spread anything.",
-      retryHint: "Abandoning the measure to protect the change skips the only step that tells you the truth.",
+      title: "Which aim can the project survive?",
+      help: "Choose the aim you would put in the quality-improvement proposal.",
+      hint: "The assignment asks for measurable aims: expected patient safety and clinical quality outcomes. A mood is not an outcome.",
+      retryHint: "If you could not fail the aim, it is not an aim.",
       options: [
         {
-          text: "Study the result against what you predicted, then adapt the change or abandon it. Do not spread it.",
+          text: "Within eight weeks, 90 percent of sepsis antibiotics on this unit start within one hour of the order.",
           ok: true,
-          fb: "A disappointing test is information. The cycle's next move is to act on that information, which includes dropping a change that made things worse."
+          fb: "You could miss 90 percent. The people, the action, the number, and the time are all named."
         },
         {
-          text: "Conclude the nurses on that shift did not care, and retrain them before you look at the process.",
+          text: "Improve safety culture so nurses feel supported.",
           ok: false,
-          fb: "That puts the failure in a person. The video's point is that the failure is in the process. Retraining without studying the steps repeats the week you just had."
+          fb: "Support matters. This sentence cannot be unmet, so it cannot steer the project."
         },
         {
-          text: "Spread the change to every unit. The plan was already written, and one bad week is noise.",
+          text: "Remind staff about sepsis at the next staff meeting.",
           ok: false,
-          fb: "Spreading a change that increased return visits multiplies the harm. The small test existed so you would not do that."
+          fb: "A meeting is an activity. An aim is the outcome you would measure after the activity."
         },
         {
-          text: "Drop the measure and keep the change, so the project still has an intervention to present.",
+          text: "Have zero problems with antibiotics going forward.",
           ok: false,
-          fb: "The measure is how you know whether to keep the change. Presenting an intervention you stopped measuring hides the result from you and from the people who will grade the project."
+          fb: "Zero and going forward hide the real gap. The proposal needs a count and a date."
         }
       ],
-      explain: "Act has three honest options: adopt, adapt, or abandon. A capstone that can only adopt has skipped Study. The final project wants the rationale and the measurement together, so a reader can see what would have made you change course."
+      explain: "The proposal's measurable aim is what tells you later whether clients were safer. Quality-improvement resources in this module are about that cycle, not about announcing that safety matters."
     },
     {
       type: "write",
-      title: "Name your process and your measure",
-      label: "One sentence for the capstone: the process you will change, the small test, and the measure",
-      placeholder: "The process is discharge teaching for new anticoagulants. On one shift for one week I will... I will watch...",
-      tie: "The Final Quality Improvement Capstone Project asks for the implementation plan and the methods used to measure outcomes. This sentence is the cycle in miniature, not the project.",
+      title: "Draft the problem and the aim",
+      label: "Two or three sentences for the Module 3 proposal: the safety gap, one root cause, and one measurable aim",
+      placeholder: "The gap on the unit is... One cause is... The aim is...",
+      tie: "Module 3 Authentic Assignment asks for a problem statement, the root-cause findings, measurable aims, and an evidence-based intervention. This is the opening, not the full proposal.",
       saved: "Saved on this device.",
-      doneTitle: "Check complete",
-      doneMeta: "You can put a process change in test order and say what a bad result should make you do."
+      doneTitle: "Practice complete",
+      doneMeta: "You can tell a slogan from a strategy, sort a cause to the place it belongs, and write an aim the project could miss."
     }
   ]
 };
@@ -455,8 +487,8 @@ window.nurs497_w07_check_improvement_cycle = {
   <script>
 
 (function () {
-  var root = document.querySelector(".nurs497-w07-check-improvement-cycle");
-  var L = window.nurs497_w07_check_improvement_cycle;
+  var root = document.querySelector(".nurs497-w03-main-safety-flags");
+  var L = window.nurs497_w03_main_safety_flags;
   function $(sel) { return root.querySelector(sel); }
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function btn(cls, html) { var b = el("button", cls, html); b.type = "button"; return b; }

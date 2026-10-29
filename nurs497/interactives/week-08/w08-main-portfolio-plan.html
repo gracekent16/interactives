@@ -1,6 +1,6 @@
 <script class="bb-embedded-html bb-auto-resize" type="text/javascript">
   function resizeFunc() {
-    var root = document.querySelector(".nurs497-w06-check-equity-equality");
+    var root = document.querySelector(".nurs497-w08-main-portfolio-plan");
     if (!root) return;
     var node = root, i = 0;
     while (node && i < 20) {
@@ -33,10 +33,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Equity or Equality</title>
+  <title>What Goes in the Portfolio, and When</title>
   <style>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
-.nurs497-w06-check-equity-equality {
+.nurs497-w08-main-portfolio-plan {
   --ink: #0F1222;
   --muted: #545B6E;
   --line: #E4E6EE;
@@ -83,294 +83,293 @@
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
-.nurs497-w06-check-equity-equality *, .nurs497-w06-check-equity-equality *::before, .nurs497-w06-check-equity-equality *::after { box-sizing: border-box; }
-.nurs497-w06-check-equity-equality ::selection { background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality button { font-family: inherit; }
-.nurs497-w06-check-equity-equality .lesson {
+.nurs497-w08-main-portfolio-plan *, .nurs497-w08-main-portfolio-plan *::before, .nurs497-w08-main-portfolio-plan *::after { box-sizing: border-box; }
+.nurs497-w08-main-portfolio-plan ::selection { background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan button { font-family: inherit; }
+.nurs497-w08-main-portfolio-plan .lesson {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 1px 2px rgba(15, 18, 34, 0.04), 0 16px 40px rgba(15, 18, 34, 0.07);
 }
-.nurs497-w06-check-equity-equality .grade-note { margin: 0; padding: 0.55rem 1.75rem; background: var(--brand-soft); color: var(--brand-deep); font-size: 0.85rem; font-weight: 700; line-height: 1.4; border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; border-bottom: 1px solid var(--line); }
-.nurs497-w06-check-equity-equality .lhead { display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start; padding: 1.6rem 1.75rem 0.9rem; }
-.nurs497-w06-check-equity-equality h1 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
-.nurs497-w06-check-equity-equality .lsub { margin: 0.45rem 0 0; color: var(--muted); max-width: 62ch; font-size: 0.98rem; }
-.nurs497-w06-check-equity-equality .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
-.nurs497-w06-check-equity-equality .pill { font-size: 0.75rem; font-weight: 800; color: var(--brand-deep); background: var(--brand-soft); border-radius: 999px; padding: 0.22rem 0.65rem; }
-.nurs497-w06-check-equity-equality .prog { display: flex; align-items: center; gap: 0.85rem; padding: 0.25rem 1.75rem 0.5rem; }
-.nurs497-w06-check-equity-equality .prog-track { position: relative; flex: 1; height: 12px; background: var(--soft); border-radius: 999px; overflow: hidden; }
-.nurs497-w06-check-equity-equality .prog-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--pink)); transition: width 520ms var(--ease); }
-.nurs497-w06-check-equity-equality .prog-fill::after { content: ""; position: absolute; left: 6px; right: 6px; top: 3px; height: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.35); }
-.nurs497-w06-check-equity-equality .prog-text { font-size: 0.8rem; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.nurs497-w06-check-equity-equality .viz { padding: 0.75rem 1.75rem 0; }
-.nurs497-w06-check-equity-equality .viz svg { display: block; width: 100%; height: auto; max-width: 760px; margin: 0 auto; }
-.nurs497-w06-check-equity-equality .stage { padding: 1.25rem 1.75rem 1.75rem; }
-.nurs497-w06-check-equity-equality h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.45rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; text-wrap: balance; }
-.nurs497-w06-check-equity-equality h2:focus { outline: none; }
-.nurs497-w06-check-equity-equality .help { margin: 0.4rem 0 1.15rem; color: var(--muted); font-size: 0.95rem; max-width: 68ch; }
-.nurs497-w06-check-equity-equality h3 { margin: 0 0 0.55rem; font-size: 0.85rem; font-weight: 800; color: var(--muted); }
-.nurs497-w06-check-equity-equality .tile {
+.nurs497-w08-main-portfolio-plan .grade-note { margin: 0; padding: 0.55rem 1.75rem; background: var(--brand-soft); color: var(--brand-deep); font-size: 0.85rem; font-weight: 700; line-height: 1.4; border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0; border-bottom: 1px solid var(--line); }
+.nurs497-w08-main-portfolio-plan .lhead { display: flex; gap: 1.25rem; justify-content: space-between; align-items: flex-start; padding: 1.6rem 1.75rem 0.9rem; }
+.nurs497-w08-main-portfolio-plan h1 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; text-wrap: balance; }
+.nurs497-w08-main-portfolio-plan .lsub { margin: 0.45rem 0 0; color: var(--muted); max-width: 62ch; font-size: 0.98rem; }
+.nurs497-w08-main-portfolio-plan .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+.nurs497-w08-main-portfolio-plan .pill { font-size: 0.75rem; font-weight: 800; color: var(--brand-deep); background: var(--brand-soft); border-radius: 999px; padding: 0.22rem 0.65rem; }
+.nurs497-w08-main-portfolio-plan .prog { display: flex; align-items: center; gap: 0.85rem; padding: 0.25rem 1.75rem 0.5rem; }
+.nurs497-w08-main-portfolio-plan .prog-track { position: relative; flex: 1; height: 12px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.nurs497-w08-main-portfolio-plan .prog-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--pink)); transition: width 520ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .prog-fill::after { content: ""; position: absolute; left: 6px; right: 6px; top: 3px; height: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.35); }
+.nurs497-w08-main-portfolio-plan .prog-text { font-size: 0.8rem; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.nurs497-w08-main-portfolio-plan .viz { padding: 0.75rem 1.75rem 0; }
+.nurs497-w08-main-portfolio-plan .viz svg { display: block; width: 100%; height: auto; max-width: 760px; margin: 0 auto; }
+.nurs497-w08-main-portfolio-plan .stage { padding: 1.25rem 1.75rem 1.75rem; }
+.nurs497-w08-main-portfolio-plan h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.45rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; text-wrap: balance; }
+.nurs497-w08-main-portfolio-plan h2:focus { outline: none; }
+.nurs497-w08-main-portfolio-plan .help { margin: 0.4rem 0 1.15rem; color: var(--muted); font-size: 0.95rem; max-width: 68ch; }
+.nurs497-w08-main-portfolio-plan h3 { margin: 0 0 0.55rem; font-size: 0.85rem; font-weight: 800; color: var(--muted); }
+.nurs497-w08-main-portfolio-plan .tile {
   display: block; width: 100%; text-align: left; color: var(--ink); background: var(--card);
   border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px;
   padding: 0.75rem 0.95rem; font-size: 0.95rem; font-weight: 600; line-height: 1.4; min-height: 3rem; cursor: pointer;
   transition: border-color 160ms var(--ease), background-color 160ms var(--ease), transform 120ms var(--ease);
 }
-.nurs497-w06-check-equity-equality .tile:hover { border-color: var(--line-strong); background: #FAFAFE; }
-.nurs497-w06-check-equity-equality .tile:active { transform: translateY(2px); border-bottom-width: 2px; margin-bottom: 2px; }
-.nurs497-w06-check-equity-equality .tile.is-sel { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .tile.is-ok { border-color: var(--ok); background: var(--ok-soft); color: var(--ok-deep); }
-.nurs497-w06-check-equity-equality .tile.is-bad { border-color: var(--bad); background: var(--bad-soft); color: var(--bad-deep); animation: nurs497-w06-check-equity-equality-shake 360ms var(--ease); }
-.nurs497-w06-check-equity-equality .tile[disabled] { cursor: default; opacity: 0.55; }
-.nurs497-w06-check-equity-equality .tile .sub { display: block; font-weight: 600; font-size: 0.82rem; color: var(--muted); margin-top: 0.15rem; }
-.nurs497-w06-check-equity-equality .tile.is-sel .sub, .nurs497-w06-check-equity-equality .tile.is-ok .sub, .nurs497-w06-check-equity-equality .tile.is-bad .sub { color: inherit; opacity: 0.85; }
-.nurs497-w06-check-equity-equality button:focus-visible, .nurs497-w06-check-equity-equality input:focus-visible, .nurs497-w06-check-equity-equality textarea:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
-.nurs497-w06-check-equity-equality .pool { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 1.1rem; min-height: 3rem; }
-.nurs497-w06-check-equity-equality .pool .tile { width: auto; flex: 1 1 15rem; max-width: 100%; }
-.nurs497-w06-check-equity-equality .pool-empty { color: var(--muted); font-size: 0.9rem; font-weight: 600; padding: 0.7rem 0; }
-.nurs497-w06-check-equity-equality .bins { display: grid; gap: 0.75rem; grid-template-columns: repeat(var(--bins, 2), minmax(0, 1fr)); }
-.nurs497-w06-check-equity-equality .bin {
+.nurs497-w08-main-portfolio-plan .tile:hover { border-color: var(--line-strong); background: #FAFAFE; }
+.nurs497-w08-main-portfolio-plan .tile:active { transform: translateY(2px); border-bottom-width: 2px; margin-bottom: 2px; }
+.nurs497-w08-main-portfolio-plan .tile.is-sel { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .tile.is-ok { border-color: var(--ok); background: var(--ok-soft); color: var(--ok-deep); }
+.nurs497-w08-main-portfolio-plan .tile.is-bad { border-color: var(--bad); background: var(--bad-soft); color: var(--bad-deep); animation: nurs497-w08-main-portfolio-plan-shake 360ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .tile[disabled] { cursor: default; opacity: 0.55; }
+.nurs497-w08-main-portfolio-plan .tile .sub { display: block; font-weight: 600; font-size: 0.82rem; color: var(--muted); margin-top: 0.15rem; }
+.nurs497-w08-main-portfolio-plan .tile.is-sel .sub, .nurs497-w08-main-portfolio-plan .tile.is-ok .sub, .nurs497-w08-main-portfolio-plan .tile.is-bad .sub { color: inherit; opacity: 0.85; }
+.nurs497-w08-main-portfolio-plan button:focus-visible, .nurs497-w08-main-portfolio-plan input:focus-visible, .nurs497-w08-main-portfolio-plan textarea:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+.nurs497-w08-main-portfolio-plan .pool { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 1.1rem; min-height: 3rem; }
+.nurs497-w08-main-portfolio-plan .pool .tile { width: auto; flex: 1 1 15rem; max-width: 100%; }
+.nurs497-w08-main-portfolio-plan .pool-empty { color: var(--muted); font-size: 0.9rem; font-weight: 600; padding: 0.7rem 0; }
+.nurs497-w08-main-portfolio-plan .bins { display: grid; gap: 0.75rem; grid-template-columns: repeat(var(--bins, 2), minmax(0, 1fr)); }
+.nurs497-w08-main-portfolio-plan .bin {
   display: flex; flex-direction: column; gap: 0.45rem; width: 100%; text-align: left; cursor: pointer;
   background: var(--soft); border: 2px dashed var(--line-strong); border-radius: 18px; padding: 0.85rem; min-height: 7rem;
   color: var(--ink); transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
 }
-.nurs497-w06-check-equity-equality .bin-label { font-size: 0.92rem; font-weight: 800; }
-.nurs497-w06-check-equity-equality .bin-sub { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-top: -0.3rem; }
-.nurs497-w06-check-equity-equality .bins.is-armed .bin { border-color: var(--brand); background: #F6F4FF; }
-.nurs497-w06-check-equity-equality .bin .tile { font-size: 0.88rem; padding: 0.55rem 0.7rem; min-height: 2.5rem; }
-.nurs497-w06-check-equity-equality .binwrap { display: flex; flex-direction: column; gap: 0.45rem; }
-.nurs497-w06-check-equity-equality .flow { display: grid; grid-template-columns: repeat(var(--bins, 4), minmax(0, 1fr)); gap: 1.4rem; position: relative; }
-.nurs497-w06-check-equity-equality .flow .binwrap { position: relative; }
-.nurs497-w06-check-equity-equality .flow .binwrap:not(:last-child)::after {
+.nurs497-w08-main-portfolio-plan .bin-label { font-size: 0.92rem; font-weight: 800; }
+.nurs497-w08-main-portfolio-plan .bin-sub { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-top: -0.3rem; }
+.nurs497-w08-main-portfolio-plan .bins.is-armed .bin { border-color: var(--brand); background: #F6F4FF; }
+.nurs497-w08-main-portfolio-plan .bin .tile { font-size: 0.88rem; padding: 0.55rem 0.7rem; min-height: 2.5rem; }
+.nurs497-w08-main-portfolio-plan .binwrap { display: flex; flex-direction: column; gap: 0.45rem; }
+.nurs497-w08-main-portfolio-plan .flow { display: grid; grid-template-columns: repeat(var(--bins, 4), minmax(0, 1fr)); gap: 1.4rem; position: relative; }
+.nurs497-w08-main-portfolio-plan .flow .binwrap { position: relative; }
+.nurs497-w08-main-portfolio-plan .flow .binwrap:not(:last-child)::after {
   content: ""; position: absolute; top: 2.1rem; right: -1.15rem; width: 0.9rem; height: 0.9rem;
   border-top: 3px solid var(--line-strong); border-right: 3px solid var(--line-strong); transform: rotate(45deg);
 }
-.nurs497-w06-check-equity-equality .flow-loop { margin: 0.6rem 0 0; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
-.nurs497-w06-check-equity-equality .step-dot { display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 2px solid var(--line-strong); font-size: 0.78rem; font-weight: 800; margin-right: 0.4rem; }
-.nurs497-w06-check-equity-equality .matrix { display: grid; grid-template-columns: minmax(7rem, 0.7fr) repeat(var(--cols, 2), minmax(0, 1fr)); gap: 0.6rem; align-items: stretch; }
-.nurs497-w06-check-equity-equality .mx-col { font-size: 0.92rem; font-weight: 800; padding: 0.2rem 0.3rem; display: flex; align-items: flex-end; }
-.nurs497-w06-check-equity-equality .mx-row { font-size: 0.9rem; font-weight: 800; display: flex; align-items: center; padding-right: 0.3rem; }
-.nurs497-w06-check-equity-equality .matrix .bin { min-height: 6.25rem; }
-.nurs497-w06-check-equity-equality .matrix .bin-label { display: none; }
-.nurs497-w06-check-equity-equality .slots { list-style: none; margin: 0 0 1.1rem; padding: 0; display: grid; gap: 0.75rem; }
-.nurs497-w06-check-equity-equality .timeline .slots { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); position: relative; padding-top: 2.6rem; }
-.nurs497-w06-check-equity-equality .timeline .slots::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 1.05rem; height: 4px; border-radius: 4px; background: var(--line); }
-.nurs497-w06-check-equity-equality .timeline .slot { position: relative; }
-.nurs497-w06-check-equity-equality .timeline .node { position: absolute; top: -2.25rem; left: 50%; transform: translateX(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 3px solid var(--line-strong); }
-.nurs497-w06-check-equity-equality .timeline .era { position: absolute; top: -2.7rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--muted); white-space: nowrap; }
-.nurs497-w06-check-equity-equality .timeline .slot:first-child .era { left: auto; right: calc(50% + 1.1rem); }
-.nurs497-w06-check-equity-equality .slot .tile.is-empty { border-style: dashed; color: var(--muted); background: var(--soft); min-height: 5.5rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
-.nurs497-w06-check-equity-equality .timeline .slot .tile { min-height: 5.5rem; }
-.nurs497-w06-check-equity-equality .slot.c0 .node { background: var(--brand); border-color: var(--brand); }
-.nurs497-w06-check-equity-equality .slot.c1 .node { background: var(--teal); border-color: var(--teal); }
-.nurs497-w06-check-equity-equality .slot.c2 .node { background: var(--pink); border-color: var(--pink); }
-.nurs497-w06-check-equity-equality .slot.c3 .node { background: var(--amber); border-color: var(--amber); }
-.nurs497-w06-check-equity-equality .slot-label { font-size: 0.78rem; font-weight: 800; color: var(--muted); margin-bottom: 0.3rem; }
-.nurs497-w06-check-equity-equality .chain .slot { position: relative; }
-.nurs497-w06-check-equity-equality .chain .slot:not(:last-child)::after { content: ""; display: block; width: 3px; height: 0.75rem; margin: 0.35rem auto 0; background: var(--line-strong); border-radius: 3px; }
-.nurs497-w06-check-equity-equality .match { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.25rem; }
-.nurs497-w06-check-equity-equality .match-col { display: flex; flex-direction: column; gap: 0.55rem; }
-.nurs497-w06-check-equity-equality .tile.has-badge { display: flex; gap: 0.65rem; align-items: flex-start; }
-.nurs497-w06-check-equity-equality .badge { flex: none; width: 1.65rem; height: 1.65rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; background: var(--soft); color: var(--muted); border: 2px solid var(--line); }
-.nurs497-w06-check-equity-equality .badge.c0 { background: var(--brand); border-color: var(--brand); color: #fff; }
-.nurs497-w06-check-equity-equality .badge.c1 { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
-.nurs497-w06-check-equity-equality .badge.c2 { background: var(--pink-deep); border-color: var(--pink-deep); color: #fff; }
-.nurs497-w06-check-equity-equality .badge.c3 { background: var(--amber); border-color: var(--amber); color: var(--ink); }
-.nurs497-w06-check-equity-equality .opts { display: grid; gap: 0.6rem; }
-.nurs497-w06-check-equity-equality .opt-key { flex: none; width: 1.8rem; height: 1.8rem; border-radius: 9px; border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; color: var(--muted); }
-.nurs497-w06-check-equity-equality .tile.is-sel .opt-key { border-color: var(--brand); color: var(--brand-deep); background: #fff; }
-.nurs497-w06-check-equity-equality .tile.is-ok .opt-key { border-color: var(--ok); color: var(--ok-deep); background: #fff; }
-.nurs497-w06-check-equity-equality .tile.is-bad .opt-key { border-color: var(--bad); color: var(--bad-deep); background: #fff; }
-.nurs497-w06-check-equity-equality .speaker { display: flex; gap: 0.85rem; align-items: flex-start; margin: 0 0 1.1rem; }
-.nurs497-w06-check-equity-equality .avatar { flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: var(--brand); }
-.nurs497-w06-check-equity-equality .avatar.teal { background: var(--teal-deep); }
-.nurs497-w06-check-equity-equality .avatar.pink { background: var(--pink-deep); }
-.nurs497-w06-check-equity-equality .bubble { position: relative; background: var(--soft); border-radius: 4px 18px 18px 18px; padding: 0.8rem 1rem; font-weight: 600; }
-.nurs497-w06-check-equity-equality .bubble strong { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 800; }
-.nurs497-w06-check-equity-equality .bar {
+.nurs497-w08-main-portfolio-plan .flow-loop { margin: 0.6rem 0 0; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+.nurs497-w08-main-portfolio-plan .step-dot { display: inline-flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 2px solid var(--line-strong); font-size: 0.78rem; font-weight: 800; margin-right: 0.4rem; }
+.nurs497-w08-main-portfolio-plan .matrix { display: grid; grid-template-columns: minmax(7rem, 0.7fr) repeat(var(--cols, 2), minmax(0, 1fr)); gap: 0.6rem; align-items: stretch; }
+.nurs497-w08-main-portfolio-plan .mx-col { font-size: 0.92rem; font-weight: 800; padding: 0.2rem 0.3rem; display: flex; align-items: flex-end; }
+.nurs497-w08-main-portfolio-plan .mx-row { font-size: 0.9rem; font-weight: 800; display: flex; align-items: center; padding-right: 0.3rem; }
+.nurs497-w08-main-portfolio-plan .matrix .bin { min-height: 6.25rem; }
+.nurs497-w08-main-portfolio-plan .matrix .bin-label { display: none; }
+.nurs497-w08-main-portfolio-plan .slots { list-style: none; margin: 0 0 1.1rem; padding: 0; display: grid; gap: 0.75rem; }
+.nurs497-w08-main-portfolio-plan .timeline .slots { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); position: relative; padding-top: 2.6rem; }
+.nurs497-w08-main-portfolio-plan .timeline .slots::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 1.05rem; height: 4px; border-radius: 4px; background: var(--line); }
+.nurs497-w08-main-portfolio-plan .timeline .slot { position: relative; }
+.nurs497-w08-main-portfolio-plan .timeline .node { position: absolute; top: -2.25rem; left: 50%; transform: translateX(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--card); border: 3px solid var(--line-strong); }
+.nurs497-w08-main-portfolio-plan .timeline .era { position: absolute; top: -2.7rem; left: calc(50% + 1.1rem); font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--muted); white-space: nowrap; }
+.nurs497-w08-main-portfolio-plan .timeline .slot:first-child .era { left: auto; right: calc(50% + 1.1rem); }
+.nurs497-w08-main-portfolio-plan .slot .tile.is-empty { border-style: dashed; color: var(--muted); background: var(--soft); min-height: 5.5rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
+.nurs497-w08-main-portfolio-plan .timeline .slot .tile { min-height: 5.5rem; }
+.nurs497-w08-main-portfolio-plan .slot.c0 .node { background: var(--brand); border-color: var(--brand); }
+.nurs497-w08-main-portfolio-plan .slot.c1 .node { background: var(--teal); border-color: var(--teal); }
+.nurs497-w08-main-portfolio-plan .slot.c2 .node { background: var(--pink); border-color: var(--pink); }
+.nurs497-w08-main-portfolio-plan .slot.c3 .node { background: var(--amber); border-color: var(--amber); }
+.nurs497-w08-main-portfolio-plan .slot-label { font-size: 0.78rem; font-weight: 800; color: var(--muted); margin-bottom: 0.3rem; }
+.nurs497-w08-main-portfolio-plan .chain .slot { position: relative; }
+.nurs497-w08-main-portfolio-plan .chain .slot:not(:last-child)::after { content: ""; display: block; width: 3px; height: 0.75rem; margin: 0.35rem auto 0; background: var(--line-strong); border-radius: 3px; }
+.nurs497-w08-main-portfolio-plan .match { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.25rem; }
+.nurs497-w08-main-portfolio-plan .match-col { display: flex; flex-direction: column; gap: 0.55rem; }
+.nurs497-w08-main-portfolio-plan .tile.has-badge { display: flex; gap: 0.65rem; align-items: flex-start; }
+.nurs497-w08-main-portfolio-plan .badge { flex: none; width: 1.65rem; height: 1.65rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; background: var(--soft); color: var(--muted); border: 2px solid var(--line); }
+.nurs497-w08-main-portfolio-plan .badge.c0 { background: var(--brand); border-color: var(--brand); color: #fff; }
+.nurs497-w08-main-portfolio-plan .badge.c1 { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
+.nurs497-w08-main-portfolio-plan .badge.c2 { background: var(--pink-deep); border-color: var(--pink-deep); color: #fff; }
+.nurs497-w08-main-portfolio-plan .badge.c3 { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+.nurs497-w08-main-portfolio-plan .opts { display: grid; gap: 0.6rem; }
+.nurs497-w08-main-portfolio-plan .opt-key { flex: none; width: 1.8rem; height: 1.8rem; border-radius: 9px; border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; color: var(--muted); }
+.nurs497-w08-main-portfolio-plan .tile.is-sel .opt-key { border-color: var(--brand); color: var(--brand-deep); background: #fff; }
+.nurs497-w08-main-portfolio-plan .tile.is-ok .opt-key { border-color: var(--ok); color: var(--ok-deep); background: #fff; }
+.nurs497-w08-main-portfolio-plan .tile.is-bad .opt-key { border-color: var(--bad); color: var(--bad-deep); background: #fff; }
+.nurs497-w08-main-portfolio-plan .speaker { display: flex; gap: 0.85rem; align-items: flex-start; margin: 0 0 1.1rem; }
+.nurs497-w08-main-portfolio-plan .avatar { flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: var(--brand); }
+.nurs497-w08-main-portfolio-plan .avatar.teal { background: var(--teal-deep); }
+.nurs497-w08-main-portfolio-plan .avatar.pink { background: var(--pink-deep); }
+.nurs497-w08-main-portfolio-plan .bubble { position: relative; background: var(--soft); border-radius: 4px 18px 18px 18px; padding: 0.8rem 1rem; font-weight: 600; }
+.nurs497-w08-main-portfolio-plan .bubble strong { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 800; }
+.nurs497-w08-main-portfolio-plan .bar {
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   padding: 1.1rem 1.75rem; border-top: 2px solid var(--line); border-radius: 0 0 var(--radius) var(--radius);
   background: var(--card); transition: background-color 220ms var(--ease), border-color 220ms var(--ease);
 }
-.nurs497-w06-check-equity-equality .bar.ok { background: var(--ok-soft); border-top-color: var(--ok-line); }
-.nurs497-w06-check-equity-equality .bar.bad { background: var(--bad-soft); border-top-color: var(--bad-line); }
-.nurs497-w06-check-equity-equality .bar-msg { display: flex; gap: 0.8rem; align-items: flex-start; min-width: 0; flex: 1; }
-.nurs497-w06-check-equity-equality .bar-msg svg { width: 34px; height: 34px; flex: none; }
-.nurs497-w06-check-equity-equality .bar-msg strong { display: block; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
-.nurs497-w06-check-equity-equality .bar-msg p { margin: 0.15rem 0 0; font-size: 0.93rem; max-width: 72ch; }
-.nurs497-w06-check-equity-equality .bar.ok .bar-msg strong, .nurs497-w06-check-equity-equality .bar.ok .bar-msg p { color: var(--ok-deep); }
-.nurs497-w06-check-equity-equality .bar.bad .bar-msg strong, .nurs497-w06-check-equity-equality .bar.bad .bar-msg p { color: var(--bad-deep); }
-.nurs497-w06-check-equity-equality .bar-actions { display: flex; gap: 0.6rem; align-items: center; flex: none; }
-.nurs497-w06-check-equity-equality .cta {
+.nurs497-w08-main-portfolio-plan .bar.ok { background: var(--ok-soft); border-top-color: var(--ok-line); }
+.nurs497-w08-main-portfolio-plan .bar.bad { background: var(--bad-soft); border-top-color: var(--bad-line); }
+.nurs497-w08-main-portfolio-plan .bar-msg { display: flex; gap: 0.8rem; align-items: flex-start; min-width: 0; flex: 1; }
+.nurs497-w08-main-portfolio-plan .bar-msg svg { width: 34px; height: 34px; flex: none; }
+.nurs497-w08-main-portfolio-plan .bar-msg strong { display: block; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.nurs497-w08-main-portfolio-plan .bar-msg p { margin: 0.15rem 0 0; font-size: 0.93rem; max-width: 72ch; }
+.nurs497-w08-main-portfolio-plan .bar.ok .bar-msg strong, .nurs497-w08-main-portfolio-plan .bar.ok .bar-msg p { color: var(--ok-deep); }
+.nurs497-w08-main-portfolio-plan .bar.bad .bar-msg strong, .nurs497-w08-main-portfolio-plan .bar.bad .bar-msg p { color: var(--bad-deep); }
+.nurs497-w08-main-portfolio-plan .bar-actions { display: flex; gap: 0.6rem; align-items: center; flex: none; }
+.nurs497-w08-main-portfolio-plan .cta {
   font-weight: 800; font-size: 1rem; color: #fff; background: var(--brand); border: 0; border-bottom: 4px solid var(--brand-deep);
   border-radius: 14px; padding: 0.8rem 1.6rem; min-width: 9.5rem; min-height: 3.1rem; cursor: pointer;
   transition: transform 120ms var(--ease), background-color 160ms var(--ease);
 }
-.nurs497-w06-check-equity-equality .cta:hover { background: #6A50F7; }
-.nurs497-w06-check-equity-equality .cta:active { transform: translateY(2px); border-bottom-width: 2px; }
-.nurs497-w06-check-equity-equality .cta[disabled] { background: var(--line); color: #6B7185; border-bottom-color: var(--line-strong); cursor: not-allowed; transform: none; }
-.nurs497-w06-check-equity-equality .bar.ok .cta { background: var(--ok); border-bottom-color: var(--ok-deep); }
-.nurs497-w06-check-equity-equality .bar.bad .cta { background: var(--bad); border-bottom-color: var(--bad-deep); }
-.nurs497-w06-check-equity-equality .ghost { background: none; border: 0; padding: 0.6rem 0.4rem; font-weight: 800; font-size: 0.92rem; color: var(--bad-deep); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
-.nurs497-w06-check-equity-equality .btn {
+.nurs497-w08-main-portfolio-plan .cta:hover { background: #6A50F7; }
+.nurs497-w08-main-portfolio-plan .cta:active { transform: translateY(2px); border-bottom-width: 2px; }
+.nurs497-w08-main-portfolio-plan .cta[disabled] { background: var(--line); color: #6B7185; border-bottom-color: var(--line-strong); cursor: not-allowed; transform: none; }
+.nurs497-w08-main-portfolio-plan .bar.ok .cta { background: var(--ok); border-bottom-color: var(--ok-deep); }
+.nurs497-w08-main-portfolio-plan .bar.bad .cta { background: var(--bad); border-bottom-color: var(--bad-deep); }
+.nurs497-w08-main-portfolio-plan .ghost { background: none; border: 0; padding: 0.6rem 0.4rem; font-weight: 800; font-size: 0.92rem; color: var(--bad-deep); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.nurs497-w08-main-portfolio-plan .btn {
   font-weight: 800; font-size: 0.92rem; border-radius: 12px; padding: 0.6rem 1.1rem; min-height: 2.75rem; cursor: pointer;
   background: var(--card); color: var(--brand-deep); border: 2px solid var(--line); border-bottom-width: 4px;
 }
-.nurs497-w06-check-equity-equality .btn:hover { border-color: var(--brand); }
-.nurs497-w06-check-equity-equality .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); border-bottom-color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .row-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
-.nurs497-w06-check-equity-equality .done { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.25rem; align-items: center; background: linear-gradient(135deg, var(--brand-soft), var(--pink-soft)); border-radius: 20px; padding: 1.25rem 1.4rem; margin-bottom: 1.4rem; }
-.nurs497-w06-check-equity-equality .done svg { width: 84px; height: 84px; }
-.nurs497-w06-check-equity-equality .done-title { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
-.nurs497-w06-check-equity-equality .done-meta { margin: 0.2rem 0 0; font-weight: 700; color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .stars { display: flex; gap: 0.25rem; margin-top: 0.45rem; }
-.nurs497-w06-check-equity-equality .stars svg { width: 26px; height: 26px; }
-.nurs497-w06-check-equity-equality label { display: block; font-weight: 800; margin: 0 0 0.4rem; }
-.nurs497-w06-check-equity-equality textarea {
+.nurs497-w08-main-portfolio-plan .btn:hover { border-color: var(--brand); }
+.nurs497-w08-main-portfolio-plan .btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); border-bottom-color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .row-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
+.nurs497-w08-main-portfolio-plan .done { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.25rem; align-items: center; background: linear-gradient(135deg, var(--brand-soft), var(--pink-soft)); border-radius: 20px; padding: 1.25rem 1.4rem; margin-bottom: 1.4rem; }
+.nurs497-w08-main-portfolio-plan .done svg { width: 84px; height: 84px; }
+.nurs497-w08-main-portfolio-plan .done-title { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.nurs497-w08-main-portfolio-plan .done-meta { margin: 0.2rem 0 0; font-weight: 700; color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .stars { display: flex; gap: 0.25rem; margin-top: 0.45rem; }
+.nurs497-w08-main-portfolio-plan .stars svg { width: 26px; height: 26px; }
+.nurs497-w08-main-portfolio-plan label { display: block; font-weight: 800; margin: 0 0 0.4rem; }
+.nurs497-w08-main-portfolio-plan textarea {
   width: 100%; min-height: 8rem; font-family: inherit; font-size: 1rem; color: var(--ink); caret-color: var(--brand);
   background: var(--card); border: 2px solid var(--line); border-radius: 14px; padding: 0.85rem 1rem; resize: vertical; line-height: 1.5;
 }
-.nurs497-w06-check-equity-equality textarea:focus { border-color: var(--brand); }
-.nurs497-w06-check-equity-equality .note { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin: 0.8rem 0 0; }
-.nurs497-w06-check-equity-equality .foot { text-align: center; color: var(--muted); font-size: 0.8rem; margin: 1rem 0 0; }
-.nurs497-w06-check-equity-equality .hidden { display: none !important; }
-.nurs497-w06-check-equity-equality .sr-live { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-@keyframes nurs497-w06-check-equity-equality-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
-@keyframes nurs497-w06-check-equity-equality-rise { 0% { opacity: 0; transform: translateY(6px); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-18px); } }
-@keyframes nurs497-w06-check-equity-equality-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
-@keyframes nurs497-w06-check-equity-equality-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.nurs497-w06-check-equity-equality .stage-in { animation: nurs497-w06-check-equity-equality-in 360ms var(--ease); }
+.nurs497-w08-main-portfolio-plan textarea:focus { border-color: var(--brand); }
+.nurs497-w08-main-portfolio-plan .note { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin: 0.8rem 0 0; }
+.nurs497-w08-main-portfolio-plan .foot { text-align: center; color: var(--muted); font-size: 0.8rem; margin: 1rem 0 0; }
+.nurs497-w08-main-portfolio-plan .hidden { display: none !important; }
+.nurs497-w08-main-portfolio-plan .sr-live { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@keyframes nurs497-w08-main-portfolio-plan-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
+@keyframes nurs497-w08-main-portfolio-plan-rise { 0% { opacity: 0; transform: translateY(6px); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-18px); } }
+@keyframes nurs497-w08-main-portfolio-plan-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+@keyframes nurs497-w08-main-portfolio-plan-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.nurs497-w08-main-portfolio-plan .stage-in { animation: nurs497-w08-main-portfolio-plan-in 360ms var(--ease); }
 @media (max-width: 720px) {
-  .nurs497-w06-check-equity-equality .lhead { flex-direction: column; padding: 1.25rem 1.1rem 0.75rem; }
-  .nurs497-w06-check-equity-equality .grade-note { padding-left: 1.1rem; padding-right: 1.1rem; }
-  .nurs497-w06-check-equity-equality .prog, .nurs497-w06-check-equity-equality .viz { padding-left: 1.1rem; padding-right: 1.1rem; }
-  .nurs497-w06-check-equity-equality .stage { padding: 1.1rem 1.1rem 1.4rem; }
-  .nurs497-w06-check-equity-equality .bar { flex-direction: column; align-items: stretch; padding: 1rem 1.1rem; }
-  .nurs497-w06-check-equity-equality .bar-actions { flex-direction: column-reverse; align-items: stretch; }
-  .nurs497-w06-check-equity-equality .cta { width: 100%; }
-  .nurs497-w06-check-equity-equality .bins, .nurs497-w06-check-equity-equality .flow { grid-template-columns: 1fr; }
-  .nurs497-w06-check-equity-equality .flow .binwrap:not(:last-child)::after { display: none; }
-  .nurs497-w06-check-equity-equality .match { grid-template-columns: 1fr; }
-  .nurs497-w06-check-equity-equality .timeline .slots { grid-template-columns: 1fr; padding-top: 0; padding-left: 2.4rem; }
-  .nurs497-w06-check-equity-equality .timeline .slots::before { left: 0.9rem; right: auto; top: 0.5rem; bottom: 0.5rem; width: 4px; height: auto; }
-  .nurs497-w06-check-equity-equality .timeline .node { top: 1.6rem; left: -1.95rem; transform: none; }
-  .nurs497-w06-check-equity-equality .timeline .era { position: static; display: block; margin-bottom: 0.25rem; }
-  .nurs497-w06-check-equity-equality .matrix { grid-template-columns: 1fr; }
-  .nurs497-w06-check-equity-equality .mx-col, .nurs497-w06-check-equity-equality .mx-row, .nurs497-w06-check-equity-equality .mx-corner { display: none; }
-  .nurs497-w06-check-equity-equality .matrix .bin-label { display: block; }
-  .nurs497-w06-check-equity-equality .done { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .nurs497-w08-main-portfolio-plan .lhead { flex-direction: column; padding: 1.25rem 1.1rem 0.75rem; }
+  .nurs497-w08-main-portfolio-plan .grade-note { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .nurs497-w08-main-portfolio-plan .prog, .nurs497-w08-main-portfolio-plan .viz { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .nurs497-w08-main-portfolio-plan .stage { padding: 1.1rem 1.1rem 1.4rem; }
+  .nurs497-w08-main-portfolio-plan .bar { flex-direction: column; align-items: stretch; padding: 1rem 1.1rem; }
+  .nurs497-w08-main-portfolio-plan .bar-actions { flex-direction: column-reverse; align-items: stretch; }
+  .nurs497-w08-main-portfolio-plan .cta { width: 100%; }
+  .nurs497-w08-main-portfolio-plan .bins, .nurs497-w08-main-portfolio-plan .flow { grid-template-columns: 1fr; }
+  .nurs497-w08-main-portfolio-plan .flow .binwrap:not(:last-child)::after { display: none; }
+  .nurs497-w08-main-portfolio-plan .match { grid-template-columns: 1fr; }
+  .nurs497-w08-main-portfolio-plan .timeline .slots { grid-template-columns: 1fr; padding-top: 0; padding-left: 2.4rem; }
+  .nurs497-w08-main-portfolio-plan .timeline .slots::before { left: 0.9rem; right: auto; top: 0.5rem; bottom: 0.5rem; width: 4px; height: auto; }
+  .nurs497-w08-main-portfolio-plan .timeline .node { top: 1.6rem; left: -1.95rem; transform: none; }
+  .nurs497-w08-main-portfolio-plan .timeline .era { position: static; display: block; margin-bottom: 0.25rem; }
+  .nurs497-w08-main-portfolio-plan .matrix { grid-template-columns: 1fr; }
+  .nurs497-w08-main-portfolio-plan .mx-col, .nurs497-w08-main-portfolio-plan .mx-row, .nurs497-w08-main-portfolio-plan .mx-corner { display: none; }
+  .nurs497-w08-main-portfolio-plan .matrix .bin-label { display: block; }
+  .nurs497-w08-main-portfolio-plan .done { grid-template-columns: 1fr; text-align: center; justify-items: center; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .nurs497-w06-check-equity-equality *, .nurs497-w06-check-equity-equality *::before, .nurs497-w06-check-equity-equality *::after { animation: none !important; transition: none !important; }
+  .nurs497-w08-main-portfolio-plan *, .nurs497-w08-main-portfolio-plan *::before, .nurs497-w08-main-portfolio-plan *::after { animation: none !important; transition: none !important; }
 }
 @media print {
-  .nurs497-w06-check-equity-equality .bar, .nurs497-w06-check-equity-equality .row-actions, .nurs497-w06-check-equity-equality .prog { display: none !important; }
-  .nurs497-w06-check-equity-equality .lesson { box-shadow: none; }
+  .nurs497-w08-main-portfolio-plan .bar, .nurs497-w08-main-portfolio-plan .row-actions, .nurs497-w08-main-portfolio-plan .prog { display: none !important; }
+  .nurs497-w08-main-portfolio-plan .lesson { box-shadow: none; }
 }
-.nurs497-w06-check-equity-equality .case { margin: 0 1.75rem 1rem; padding: 1rem 1.2rem; border-radius: 18px; background: linear-gradient(135deg, var(--brand-soft), var(--teal-soft)); display: grid; gap: 0.85rem; }
-.nurs497-w06-check-equity-equality .case-tag { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .case p { margin: 0.25rem 0 0; font-weight: 600; max-width: 78ch; }
-.nurs497-w06-check-equity-equality .cast { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
-.nurs497-w06-check-equity-equality .cast li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; line-height: 1.25; }
-.nurs497-w06-check-equity-equality .cast strong { display: block; font-weight: 800; }
-.nurs497-w06-check-equity-equality .cast-role { color: var(--muted); font-weight: 600; }
-.nurs497-w06-check-equity-equality .avatar.sm { width: 2.2rem; height: 2.2rem; font-size: 0.78rem; }
-.nurs497-w06-check-equity-equality .avatar.amber { background: var(--amber-deep); }
-.nurs497-w06-check-equity-equality .pcard-sub { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; }
-.nurs497-w06-check-equity-equality .prog-text { min-width: 5.5rem; }
-@media (max-width: 720px) { .nurs497-w06-check-equity-equality .case { margin: 0 1.1rem 1rem; } }
-.nurs497-w06-check-equity-equality .netlab { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
-.nurs497-w06-check-equity-equality .net { background: var(--soft); border-radius: 20px; padding: 0.5rem; }
-.nurs497-w06-check-equity-equality .net svg { display: block; width: 100%; height: auto; max-height: 440px; }
-@media (max-width: 860px) { .nurs497-w06-check-equity-equality .netlab { grid-template-columns: 1fr; } }
-.nurs497-w06-check-equity-equality .net-stats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
-.nurs497-w06-check-equity-equality .stat { font-size: 0.85rem; font-weight: 800; border-radius: 999px; padding: 0.3rem 0.8rem; background: var(--soft); }
-.nurs497-w06-check-equity-equality .stat.good { background: var(--ok-soft); color: var(--ok-deep); }
-.nurs497-w06-check-equity-equality .stat.warn { background: var(--bad-soft); color: var(--bad-deep); }
-.nurs497-w06-check-equity-equality .moves { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
-.nurs497-w06-check-equity-equality .moves .tile { display: flex; gap: 0.7rem; align-items: center; }
-.nurs497-w06-check-equity-equality .toggle { flex: none; width: 2.6rem; height: 1.5rem; border-radius: 999px; background: var(--line-strong); position: relative; transition: background-color 160ms var(--ease); }
-.nurs497-w06-check-equity-equality .toggle::after { content: ""; position: absolute; top: 3px; left: 3px; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: #fff; transition: transform 200ms var(--ease); }
-.nurs497-w06-check-equity-equality .tile[aria-pressed="true"] .toggle { background: var(--brand); }
-.nurs497-w06-check-equity-equality .tile[aria-pressed="true"] .toggle::after { transform: translateX(1.1rem); }
-@media (max-width: 720px) { .nurs497-w06-check-equity-equality .moves { grid-template-columns: 1fr; } }
-.nurs497-w06-check-equity-equality .xw-wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.6rem; align-items: start; }
-.nurs497-w06-check-equity-equality .xw { --cell: clamp(1.7rem, calc((100vw - 5rem) / var(--cols)), 2.55rem); display: grid; grid-template-columns: repeat(var(--cols), var(--cell)); grid-auto-rows: var(--cell); gap: 3px; }
-.nurs497-w06-check-equity-equality .xw-blank { border-radius: 6px; }
-.nurs497-w06-check-equity-equality .xw-cell { position: relative; border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 2px var(--line-strong); transition: background-color 160ms var(--ease); }
-.nurs497-w06-check-equity-equality .xw-cell.is-word { background: var(--brand-soft); box-shadow: inset 0 0 0 2px var(--brand); }
-.nurs497-w06-check-equity-equality .xw-cell.is-ok { background: var(--ok-soft); box-shadow: inset 0 0 0 2px var(--ok); }
-.nurs497-w06-check-equity-equality .xw-cell.is-bad { background: var(--bad-soft); box-shadow: inset 0 0 0 2px var(--bad); }
-.nurs497-w06-check-equity-equality .xw-cell.is-hint input { color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .xw-cell input { width: 100%; height: 100%; border: 0; background: transparent; text-align: center; font-family: inherit; font-weight: 800; font-size: calc(var(--cell) * 0.46); color: var(--ink); text-transform: uppercase; caret-color: var(--brand); padding: 0; border-radius: 8px; }
-.nurs497-w06-check-equity-equality .xw-cell input:focus-visible { outline: 3px solid var(--brand); outline-offset: 1px; }
-.nurs497-w06-check-equity-equality .xw-num { position: absolute; top: 2px; left: 4px; font-size: 0.6rem; font-weight: 800; color: var(--muted); pointer-events: none; }
-.nurs497-w06-check-equity-equality .clues { display: grid; gap: 1.1rem; }
-.nurs497-w06-check-equity-equality .clue-group { display: grid; gap: 0.25rem; }
-.nurs497-w06-check-equity-equality .clue { display: flex; gap: 0.6rem; text-align: left; width: 100%; font-size: 0.9rem; line-height: 1.45; color: var(--ink); background: transparent; border: 0; border-radius: 10px; padding: 0.45rem 0.55rem; cursor: pointer; font-weight: 600; }
-.nurs497-w06-check-equity-equality .clue:hover { background: var(--soft); }
-.nurs497-w06-check-equity-equality .clue.is-on { background: var(--brand-soft); color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .clue em { font-style: normal; color: var(--muted); }
-.nurs497-w06-check-equity-equality .clue-n { flex: none; min-width: 1.4rem; font-weight: 800; }
-@media (max-width: 860px) { .nurs497-w06-check-equity-equality .xw-wrap { grid-template-columns: 1fr; } }
-.nurs497-w06-check-equity-equality .brief { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 0.95rem 1.1rem; margin: 0 0 1.1rem; }
-.nurs497-w06-check-equity-equality .brief svg { width: 34px; height: 34px; flex: none; }
-.nurs497-w06-check-equity-equality .brief p { margin: 0; font-size: 0.93rem; color: var(--ink); }
-.nurs497-w06-check-equity-equality .brief strong { display: block; color: var(--brand-deep); font-size: 0.85rem; }
-.nurs497-w06-check-equity-equality .progs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
-.nurs497-w06-check-equity-equality .pcard { background: var(--soft); border-radius: 18px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
-.nurs497-w06-check-equity-equality .pcard-head { display: flex; gap: 0.6rem; align-items: center; }
-.nurs497-w06-check-equity-equality .pcard-head svg { width: 38px; height: 38px; flex: none; }
-.nurs497-w06-check-equity-equality .pcard-name { font-weight: 800; font-size: 0.92rem; line-height: 1.3; }
-.nurs497-w06-check-equity-equality .people { display: flex; flex-wrap: wrap; gap: 4px; min-height: 34px; }
-.nurs497-w06-check-equity-equality .people svg { width: 22px; height: 30px; transition: opacity 400ms var(--ease), transform 400ms var(--ease); }
-.nurs497-w06-check-equity-equality .people svg.gone { opacity: 0.35; transform: translateY(4px); }
-.nurs497-w06-check-equity-equality .pmeta { font-size: 0.85rem; font-weight: 700; }
-.nurs497-w06-check-equity-equality .chip { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 800; border-radius: 999px; padding: 0.22rem 0.6rem; background: #fff; }
-.nurs497-w06-check-equity-equality .chip.yes { color: var(--ok-deep); background: var(--ok-soft); }
-.nurs497-w06-check-equity-equality .chip.no { color: var(--bad-deep); background: var(--bad-soft); }
-.nurs497-w06-check-equity-equality .chip.wait { color: var(--muted); }
-.nurs497-w06-check-equity-equality .levers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
-.nurs497-w06-check-equity-equality .levers .tile { display: flex; gap: 0.7rem; align-items: flex-start; }
-.nurs497-w06-check-equity-equality .check-box { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 7px; border: 2px solid var(--line-strong); background: #fff; margin-top: 0.1rem; display: inline-flex; align-items: center; justify-content: center; }
-.nurs497-w06-check-equity-equality .tile[aria-pressed="true"] .check-box { background: var(--brand); border-color: var(--brand); }
-.nurs497-w06-check-equity-equality .tile[aria-pressed="true"] .check-box::after { content: ""; width: 0.45rem; height: 0.8rem; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg) translate(-1px, -1px); }
-.nurs497-w06-check-equity-equality .meter { display: flex; align-items: center; gap: 0.8rem; margin: 0.2rem 0 1rem; }
-.nurs497-w06-check-equity-equality .meter-track { flex: 1; height: 14px; border-radius: 999px; background: var(--soft); position: relative; overflow: hidden; }
-.nurs497-w06-check-equity-equality .meter-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--teal), var(--brand)); transition: width 600ms var(--ease); }
-.nurs497-w06-check-equity-equality .meter-goal { position: absolute; top: -3px; bottom: -3px; width: 3px; background: var(--ink); border-radius: 2px; }
-.nurs497-w06-check-equity-equality .meter-num { font-weight: 800; font-variant-numeric: tabular-nums; min-width: 5.5rem; text-align: right; }
-.nurs497-w06-check-equity-equality .model-note { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin: 0 0 0.8rem; }
-.nurs497-w06-check-equity-equality .dots { display: grid; grid-template-columns: repeat(5, 18px); gap: 6px; }
-.nurs497-w06-check-equity-equality .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px dashed var(--line-strong); background: #fff; transition: background-color 360ms var(--ease), border-color 360ms var(--ease); }
-.nurs497-w06-check-equity-equality .dot.on { border: 2px solid var(--teal-deep); background: var(--teal); }
-.nurs497-w06-check-equity-equality .radio-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
-.nurs497-w06-check-equity-equality .radio-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.nurs497-w06-check-equity-equality .run { margin-bottom: 1rem; }
+.nurs497-w08-main-portfolio-plan .case { margin: 0 1.75rem 1rem; padding: 1rem 1.2rem; border-radius: 18px; background: linear-gradient(135deg, var(--brand-soft), var(--teal-soft)); display: grid; gap: 0.85rem; }
+.nurs497-w08-main-portfolio-plan .case-tag { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .case p { margin: 0.25rem 0 0; font-weight: 600; max-width: 78ch; }
+.nurs497-w08-main-portfolio-plan .cast { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
+.nurs497-w08-main-portfolio-plan .cast li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; line-height: 1.25; }
+.nurs497-w08-main-portfolio-plan .cast strong { display: block; font-weight: 800; }
+.nurs497-w08-main-portfolio-plan .cast-role { color: var(--muted); font-weight: 600; }
+.nurs497-w08-main-portfolio-plan .avatar.sm { width: 2.2rem; height: 2.2rem; font-size: 0.78rem; }
+.nurs497-w08-main-portfolio-plan .avatar.amber { background: var(--amber-deep); }
+.nurs497-w08-main-portfolio-plan .pcard-sub { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; }
+.nurs497-w08-main-portfolio-plan .prog-text { min-width: 5.5rem; }
+@media (max-width: 720px) { .nurs497-w08-main-portfolio-plan .case { margin: 0 1.1rem 1rem; } }
+.nurs497-w08-main-portfolio-plan .netlab { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.nurs497-w08-main-portfolio-plan .net { background: var(--soft); border-radius: 20px; padding: 0.5rem; }
+.nurs497-w08-main-portfolio-plan .net svg { display: block; width: 100%; height: auto; max-height: 440px; }
+@media (max-width: 860px) { .nurs497-w08-main-portfolio-plan .netlab { grid-template-columns: 1fr; } }
+.nurs497-w08-main-portfolio-plan .net-stats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
+.nurs497-w08-main-portfolio-plan .stat { font-size: 0.85rem; font-weight: 800; border-radius: 999px; padding: 0.3rem 0.8rem; background: var(--soft); }
+.nurs497-w08-main-portfolio-plan .stat.good { background: var(--ok-soft); color: var(--ok-deep); }
+.nurs497-w08-main-portfolio-plan .stat.warn { background: var(--bad-soft); color: var(--bad-deep); }
+.nurs497-w08-main-portfolio-plan .moves { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+.nurs497-w08-main-portfolio-plan .moves .tile { display: flex; gap: 0.7rem; align-items: center; }
+.nurs497-w08-main-portfolio-plan .toggle { flex: none; width: 2.6rem; height: 1.5rem; border-radius: 999px; background: var(--line-strong); position: relative; transition: background-color 160ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .toggle::after { content: ""; position: absolute; top: 3px; left: 3px; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: #fff; transition: transform 200ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .tile[aria-pressed="true"] .toggle { background: var(--brand); }
+.nurs497-w08-main-portfolio-plan .tile[aria-pressed="true"] .toggle::after { transform: translateX(1.1rem); }
+@media (max-width: 720px) { .nurs497-w08-main-portfolio-plan .moves { grid-template-columns: 1fr; } }
+.nurs497-w08-main-portfolio-plan .xw-wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.6rem; align-items: start; }
+.nurs497-w08-main-portfolio-plan .xw { --cell: clamp(1.7rem, calc((100vw - 5rem) / var(--cols)), 2.55rem); display: grid; grid-template-columns: repeat(var(--cols), var(--cell)); grid-auto-rows: var(--cell); gap: 3px; }
+.nurs497-w08-main-portfolio-plan .xw-blank { border-radius: 6px; }
+.nurs497-w08-main-portfolio-plan .xw-cell { position: relative; border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 2px var(--line-strong); transition: background-color 160ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .xw-cell.is-word { background: var(--brand-soft); box-shadow: inset 0 0 0 2px var(--brand); }
+.nurs497-w08-main-portfolio-plan .xw-cell.is-ok { background: var(--ok-soft); box-shadow: inset 0 0 0 2px var(--ok); }
+.nurs497-w08-main-portfolio-plan .xw-cell.is-bad { background: var(--bad-soft); box-shadow: inset 0 0 0 2px var(--bad); }
+.nurs497-w08-main-portfolio-plan .xw-cell.is-hint input { color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .xw-cell input { width: 100%; height: 100%; border: 0; background: transparent; text-align: center; font-family: inherit; font-weight: 800; font-size: calc(var(--cell) * 0.46); color: var(--ink); text-transform: uppercase; caret-color: var(--brand); padding: 0; border-radius: 8px; }
+.nurs497-w08-main-portfolio-plan .xw-cell input:focus-visible { outline: 3px solid var(--brand); outline-offset: 1px; }
+.nurs497-w08-main-portfolio-plan .xw-num { position: absolute; top: 2px; left: 4px; font-size: 0.6rem; font-weight: 800; color: var(--muted); pointer-events: none; }
+.nurs497-w08-main-portfolio-plan .clues { display: grid; gap: 1.1rem; }
+.nurs497-w08-main-portfolio-plan .clue-group { display: grid; gap: 0.25rem; }
+.nurs497-w08-main-portfolio-plan .clue { display: flex; gap: 0.6rem; text-align: left; width: 100%; font-size: 0.9rem; line-height: 1.45; color: var(--ink); background: transparent; border: 0; border-radius: 10px; padding: 0.45rem 0.55rem; cursor: pointer; font-weight: 600; }
+.nurs497-w08-main-portfolio-plan .clue:hover { background: var(--soft); }
+.nurs497-w08-main-portfolio-plan .clue.is-on { background: var(--brand-soft); color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .clue em { font-style: normal; color: var(--muted); }
+.nurs497-w08-main-portfolio-plan .clue-n { flex: none; min-width: 1.4rem; font-weight: 800; }
+@media (max-width: 860px) { .nurs497-w08-main-portfolio-plan .xw-wrap { grid-template-columns: 1fr; } }
+.nurs497-w08-main-portfolio-plan .brief { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 0.95rem 1.1rem; margin: 0 0 1.1rem; }
+.nurs497-w08-main-portfolio-plan .brief svg { width: 34px; height: 34px; flex: none; }
+.nurs497-w08-main-portfolio-plan .brief p { margin: 0; font-size: 0.93rem; color: var(--ink); }
+.nurs497-w08-main-portfolio-plan .brief strong { display: block; color: var(--brand-deep); font-size: 0.85rem; }
+.nurs497-w08-main-portfolio-plan .progs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+.nurs497-w08-main-portfolio-plan .pcard { background: var(--soft); border-radius: 18px; padding: 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.nurs497-w08-main-portfolio-plan .pcard-head { display: flex; gap: 0.6rem; align-items: center; }
+.nurs497-w08-main-portfolio-plan .pcard-head svg { width: 38px; height: 38px; flex: none; }
+.nurs497-w08-main-portfolio-plan .pcard-name { font-weight: 800; font-size: 0.92rem; line-height: 1.3; }
+.nurs497-w08-main-portfolio-plan .people { display: flex; flex-wrap: wrap; gap: 4px; min-height: 34px; }
+.nurs497-w08-main-portfolio-plan .people svg { width: 22px; height: 30px; transition: opacity 400ms var(--ease), transform 400ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .people svg.gone { opacity: 0.35; transform: translateY(4px); }
+.nurs497-w08-main-portfolio-plan .pmeta { font-size: 0.85rem; font-weight: 700; }
+.nurs497-w08-main-portfolio-plan .chip { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 800; border-radius: 999px; padding: 0.22rem 0.6rem; background: #fff; }
+.nurs497-w08-main-portfolio-plan .chip.yes { color: var(--ok-deep); background: var(--ok-soft); }
+.nurs497-w08-main-portfolio-plan .chip.no { color: var(--bad-deep); background: var(--bad-soft); }
+.nurs497-w08-main-portfolio-plan .chip.wait { color: var(--muted); }
+.nurs497-w08-main-portfolio-plan .levers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
+.nurs497-w08-main-portfolio-plan .levers .tile { display: flex; gap: 0.7rem; align-items: flex-start; }
+.nurs497-w08-main-portfolio-plan .check-box { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 7px; border: 2px solid var(--line-strong); background: #fff; margin-top: 0.1rem; display: inline-flex; align-items: center; justify-content: center; }
+.nurs497-w08-main-portfolio-plan .tile[aria-pressed="true"] .check-box { background: var(--brand); border-color: var(--brand); }
+.nurs497-w08-main-portfolio-plan .tile[aria-pressed="true"] .check-box::after { content: ""; width: 0.45rem; height: 0.8rem; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg) translate(-1px, -1px); }
+.nurs497-w08-main-portfolio-plan .meter { display: flex; align-items: center; gap: 0.8rem; margin: 0.2rem 0 1rem; }
+.nurs497-w08-main-portfolio-plan .meter-track { flex: 1; height: 14px; border-radius: 999px; background: var(--soft); position: relative; overflow: hidden; }
+.nurs497-w08-main-portfolio-plan .meter-fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--teal), var(--brand)); transition: width 600ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .meter-goal { position: absolute; top: -3px; bottom: -3px; width: 3px; background: var(--ink); border-radius: 2px; }
+.nurs497-w08-main-portfolio-plan .meter-num { font-weight: 800; font-variant-numeric: tabular-nums; min-width: 5.5rem; text-align: right; }
+.nurs497-w08-main-portfolio-plan .model-note { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin: 0 0 0.8rem; }
+.nurs497-w08-main-portfolio-plan .dots { display: grid; grid-template-columns: repeat(5, 18px); gap: 6px; }
+.nurs497-w08-main-portfolio-plan .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px dashed var(--line-strong); background: #fff; transition: background-color 360ms var(--ease), border-color 360ms var(--ease); }
+.nurs497-w08-main-portfolio-plan .dot.on { border: 2px solid var(--teal-deep); background: var(--teal); }
+.nurs497-w08-main-portfolio-plan .radio-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
+.nurs497-w08-main-portfolio-plan .radio-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nurs497-w08-main-portfolio-plan .run { margin-bottom: 1rem; }
 @media (max-width: 720px) {
-  .nurs497-w06-check-equity-equality .progs, .nurs497-w06-check-equity-equality .levers, .nurs497-w06-check-equity-equality .radio-row, .nurs497-w06-check-equity-equality .radio-row.four { grid-template-columns: 1fr; }
+  .nurs497-w08-main-portfolio-plan .progs, .nurs497-w08-main-portfolio-plan .levers, .nurs497-w08-main-portfolio-plan .radio-row, .nurs497-w08-main-portfolio-plan .radio-row.four { grid-template-columns: 1fr; }
 }
-.nurs497-w06-check-equity-equality .based { margin: 0 0 1rem; padding: 0.6rem 0.9rem; border-left: 3px solid var(--brand); background: var(--brand-soft); border-radius: 0 10px 10px 0; font-size: 0.86rem; font-weight: 700; color: var(--brand-deep); }
-.nurs497-w06-check-equity-equality .based span { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; margin-top: 0.1rem; }
+.nurs497-w08-main-portfolio-plan .based { margin: 0 0 1rem; padding: 0.6rem 0.9rem; border-left: 3px solid var(--brand); background: var(--brand-soft); border-radius: 0 10px 10px 0; font-size: 0.86rem; font-weight: 700; color: var(--brand-deep); }
+.nurs497-w08-main-portfolio-plan .based span { display: block; font-weight: 600; color: var(--muted); font-size: 0.8rem; margin-top: 0.1rem; }
 
 
 
   </style>
 </head>
 <body>
-  <div class="nurs497-w06-check-equity-equality">
+  <div class="nurs497-w08-main-portfolio-plan">
     <div class="lesson">
       <p class="grade-note">This is ungraded practice.</p>
       <header class="lhead">
         <div>
-          <h1>Equity or Equality</h1>
-          <p class="lsub">The report&#x27;s aim is a fair chance at health, not an identical service for every person. Sort the plans.</p>
-          <div class="pills"><span class="pill">CSLO E</span></div>
+          <h1>What Goes in the Portfolio, and When</h1>
+          <p class="lsub">Place the pieces of your growth in the order a career plan can use, then match each one to the section of the e-portfolio that should hold it.</p>
+          <div class="pills"><span class="pill">MLO 8.1-8.3</span></div>
         </div>
       </header>
-      <p class="based">Based on The Future of Nursing 2020-2030, Chapter 5, The Role of Nurses in Improving Health Equity<span>Fair and just opportunities for health, against identical services that leave obstacles in place</span></p>
       <section class="case" aria-label="Your role in this case">
-        <div><p>Chapter 5 asks what nurses do about health equity. Equality gives everyone the same thing. Equity changes the support so that obstacles like poverty, language, or neighborhood do not decide who gets to be healthy.</p></div>
+        <div><p>Module 8 turns the term into a portfolio and a forward plan. Section 1 holds the baseline and the first goals. Section 2 holds the evidence that you moved. The career plan says what you will do next, with a timeline.</p></div>
       </section>
       <div class="prog"><span class="prog-text" id="progText">Step 1</span><div class="prog-track"><span class="prog-fill" id="progFill"></span></div></div>
       <section class="stage" id="stage" aria-live="off"></section>
@@ -384,72 +383,92 @@
     </div>
     <p class="foot">This is ungraded practice.</p>
     <div class="sr-live" aria-live="polite" aria-atomic="true"></div>
-    <noscript><p>This check asks you to sort plans into equality or equity, choose which equal-looking plan leaves a disparity in place, and write one equity move for your service learning project.</p></noscript>
+    <noscript><p>This activity asks you to order a career plan from the present goal to a later role, match portfolio evidence to the section that should hold it, and draft one short-term goal and one long-term goal for the capstone plan.</p></noscript>
   </div>
   <script>
-window.nurs497_w06_check_equity_equality = {
-  key: "nurs497-w06-check-equity-equality",
+window.nurs497_w08_main_portfolio_plan = {
+  key: "nurs497-w08-main-portfolio-plan",
   steps: [
     {
-      type: "sort",
-      title: "Same resource, or a fair chance",
-      help: "Tap a plan, then tap the column it belongs in. Tap a placed plan to take it back.",
-      hint: "Ask whether the obstacle changed. If everyone received the same thing and the obstacle is still there, it is equality.",
-      retryHint: "Equal hours and equal packets feel fair. Look at who still cannot use them.",
-      poolLabel: "Plans a nurse might propose",
-      bins: [
-        { id: "eq", label: "Equality", sub: "Everyone gets the same thing" },
-        { id: "ey", label: "Equity", sub: "Support shifts so the obstacle matters less" }
-      ],
+      type: "order",
+      layout: "timeline",
+      title: "Order the plan",
+      help: "Tap each milestone to place it, earliest first. Tap a placed milestone to take it back.",
+      hint: "The career-plan video and the capstone instructions both want short-term goals, long-term goals, and the steps between them. A role you cannot yet qualify for does not come first.",
+      retryHint: "The certification has to come before the job that requires it.",
+      poolLabel: "Milestones for one nurse's plan",
+      slotLabels: ["Now", "", "", "Further out"],
       items: [
-        { id: "i1", text: "Every discharged patient gets the same two-page instruction sheet, in English.", bin: "eq" },
-        { id: "i2", text: "The clinic offers the same Tuesday morning hours in every neighborhood.", bin: "eq" },
-        { id: "i3", text: "Every school gets one nurse for the same number of hours, regardless of the asthma burden.", bin: "eq" },
-        { id: "i4", text: "Patients who do not read English get the instructions in their language, and patients with no nearby pharmacy get the medication delivered.", bin: "ey" },
-        { id: "i5", text: "The clinic adds evening hours in the neighborhood where most adults work shifts that make Tuesday morning impossible.", bin: "ey" },
-        { id: "i6", text: "The school with the higher rate of uncontrolled asthma gets a nurse, a supply program, and a home-visit partnership.", bin: "ey" }
+        { id: "now", text: "Name two goals from this term's mentor work that are not finished yet" },
+        { id: "cert", text: "Complete the certification the next role requires" },
+        { id: "role", text: "Apply for a charge or educator role that uses that certification" },
+        { id: "learn", text: "Keep a yearly learning plan after the role, so the growth does not stop at the job title" }
       ],
-      missHint: "Identical hours are equality even when the need is not identical. The extra partnership is what makes the asthma plan equity.",
-      explain: "The report's aim is fair and just opportunities for everyone to be as healthy as they can, which means removing obstacles, not handing every person an identical service. An English-only packet, identical clinic hours, and equal school-nurse time can all be defended as fair. They leave the disparity exactly where it was: with the patient who cannot read the packet, the worker who cannot come on Tuesday morning, and the school that already carries more asthma. Equity is the plan that changes the resource to fit the obstacle."
+      answer: ["now", "cert", "role", "learn"],
+      missHint: "Lifelong learning is the part that continues after the new role. It is not the first box.",
+      explain: "MLO 8.1 is the goals, tied to lifelong learning. MLO 8.3 is the written plan: timeline, milestones, and actions such as a certification, graduate study, or a leadership role. The order is what makes the plan a plan rather than a wish list."
+    },
+    {
+      type: "match",
+      title: "Put the evidence in the right section",
+      help: "Tap a piece of work, then tap the portfolio section that should hold it.",
+      hint: "The capstone splits the portfolio into a baseline, the evidence of growth, and the credentials. The narrative explains how the evidence met the original goals.",
+      retryHint: "The Module 1 self-assessment is the baseline. It is not the proof that you already led the team.",
+      leftLabel: "Piece of work",
+      rightLabel: "Where it goes",
+      left: [
+        { id: "base", text: "The Module 1 stage assessment and the first mentor goals" },
+        { id: "svc", text: "The Module 5 account of how you worked across disciplines" },
+        { id: "gov", text: "The Module 6 account of authority, dynamics, and emotional intelligence" },
+        { id: "cv", text: "The current resume or CV" }
+      ],
+      right: [
+        { id: "r1", for: "base", text: "Section 1. Baseline identity and goal setting" },
+        { id: "r2", for: "svc", text: "Section 2. Evidence that the original goals were tested in practice" },
+        { id: "r3", for: "gov", text: "Section 2. Evidence of how you handled authority and the team" },
+        { id: "r4", for: "cv", text: "Section 3. Professional credentials" }
+      ],
+      explain: "MLO 8.2 is the synthesis. The one-page narrative in Section 2 is where you say how the practicum evidence moved you on Benner's trajectory and toward the goals in Section 1. A portfolio that is only a resume has not done that."
     },
     {
       type: "choice",
-      title: "Which equal plan leaves the disparity standing?",
-      help: "Your service learning site serves older adults, many of whom take two buses to get there. Choose the plan that looks equal and does not move equity.",
-      hint: "Picture who still cannot attend. That person tells you whether the plan only looked fair.",
-      retryHint: "A bus voucher and a phone option change the obstacle. A second identical flyer does not.",
+      title: "Which goal can go in the plan?",
+      help: "Choose the goal that belongs in the career development plan.",
+      hint: "The plan asks for specific, measurable short-term and long-term goals, plus the actions that would get you there.",
+      retryHint: "A goal you could not fail is not measurable.",
       options: [
         {
-          text: "Print twice as many of the same English flyers and post them in the same lobby.",
+          text: "Within 18 months, finish the certification and precept one new graduate, using the mentor pattern from this term.",
           ok: true,
-          fb: "More of the same resource does not touch the bus ride or the language. It is equality at a larger volume, and the people who could not come still cannot come."
+          fb: "The time, the action, and the evidence are named. It also continues the mentor relationship instead of dropping it."
         },
         {
-          text: "Offer the session a second time by phone for people who cannot make the trip, and send the steps in the language they read.",
+          text: "Be a great leader someday.",
           ok: false,
-          fb: "That changes the obstacle. It is the equity plan, which is the one this question did not ask for."
+          fb: "Someday and great cannot be checked. The plan needs a time and an action."
         },
         {
-          text: "Give bus vouchers to the participants who would otherwise transfer twice.",
+          text: "Keep doing what I am doing and see what happens.",
           ok: false,
-          fb: "The voucher is aimed at the obstacle. That is equity, not the equal-looking plan."
+          fb: "That is not a plan. Lifelong learning in this module is a strategy, not a drift."
         },
         {
-          text: "Move one session to the building where those two-bus riders already live.",
+          text: "Put the whole capstone paper in Section 3 and skip the narrative.",
           ok: false,
-          fb: "Changing the place so the trip disappears is an equity move. The equal plan kept the session where it was and printed more paper."
+          fb: "Section 3 is credentials. The narrative is how Section 2 shows growth against Section 1."
         }
-      ]
+      ],
+      explain: "The discussion asks for one insight from your mentor that changed how you handle communication, conflict, or governance. The career plan is where that insight becomes a next step, not only a memory."
     },
     {
       type: "write",
-      title: "One equity move for your project",
-      label: "The obstacle your service learning group actually faces, and the change in the plan that would address it",
-      placeholder: "The obstacle is transportation. An equal plan would be... An equity plan would...",
-      tie: "Discussion #4 and the service learning project both sit on this report. Use the sentence to show you know the difference between giving everyone the same thing and removing the obstacle.",
+      title: "Draft two goals",
+      label: "A short-term goal and a long-term goal for the career development plan, each with a time and an action",
+      placeholder: "Within the next year I will... Within five years I will...",
+      tie: "The Module 8 Capstone Project asks for the e-portfolio in three sections and a separate career plan with measurable goals, a timeline, and a way to keep learning. This is a start, not the portfolio.",
       saved: "Saved on this device.",
-      doneTitle: "Check complete",
-      doneMeta: "You can tell an identical service from a plan that gives people a fair chance at the same health."
+      doneTitle: "Practice complete",
+      doneMeta: "You can put the term's evidence in the section that should hold it, and you can write a next step that has a time on it."
     }
   ]
 };
@@ -457,8 +476,8 @@ window.nurs497_w06_check_equity_equality = {
   <script>
 
 (function () {
-  var root = document.querySelector(".nurs497-w06-check-equity-equality");
-  var L = window.nurs497_w06_check_equity_equality;
+  var root = document.querySelector(".nurs497-w08-main-portfolio-plan");
+  var L = window.nurs497_w08_main_portfolio_plan;
   function $(sel) { return root.querySelector(sel); }
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function btn(cls, html) { var b = el("button", cls, html); b.type = "button"; return b; }

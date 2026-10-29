@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 1 Weekly Checklist</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+    .nurs497-m01-checklist {
+      --ink: #171528;
+      --muted: #545B6E;
+      --line: #E4E6EE;
+      --surface: #FFFFFF;
+      --page: #F4F5FA;
+      --primary: #5B3DF5;
+      --primary-deep: #3F24C9;
+      --primary-soft: #EEEAFE;
+      --header: #3F24C9;
+      --amber: #8A5A00;
+      --amber-soft: #FFF4D6;
+      --teal: #06706C;
+      --teal-soft: #DDF6F4;
+      --green: #08783F;
+      --green-soft: #E3F8EC;
+      --charcoal: #252433;
+      --radius: 22px;
+      --page-gutter: 1rem;
+      --page-max: 100%;
+      position: relative;
+      display: flow-root;
+      width: 100%;
+      max-width: var(--page-max);
+      min-width: 0;
+      margin: 0;
+      padding: 1.5rem var(--page-gutter) 2rem;
+      overflow: visible;
+      overflow-wrap: anywhere;
+      box-sizing: border-box;
+      color: var(--ink);
+      font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .nurs497-m01-checklist *,
+    .nurs497-m01-checklist *::before,
+    .nurs497-m01-checklist *::after { box-sizing: border-box; }
+
+    .nurs497-m01-checklist ::selection { color: var(--ink); background: var(--primary-soft); }
+
+    .nurs497-m01-checklist .checklist-shell {
+      background: var(--page);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 18px 44px rgba(63, 36, 201, 0.12);
+    }
+
+    .nurs497-m01-checklist .checklist-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.55fr);
+      gap: 2rem;
+      align-items: end;
+      padding: 2rem;
+      color: #FFFFFF;
+      background: var(--header);
+      border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+    }
+
+    .nurs497-m01-checklist h1 {
+      max-width: 16ch;
+      margin: 0;
+      color: #FFFFFF;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.16;
+      letter-spacing: -0.03em;
+      text-wrap: balance;
+    }
+
+    .nurs497-m01-checklist .header-copy {
+      max-width: 66ch;
+      margin: 0.65rem 0 0;
+      color: #EEEAFE;
+      font-size: 0.95rem;
+    }
+
+    .nurs497-m01-checklist .header-instruction {
+      margin: 0.8rem 0 0;
+      color: #FFFFFF;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .nurs497-m01-checklist .progress-panel {
+      padding: 1.1rem 1.2rem;
+      color: var(--ink);
+      background: #FFFFFF;
+      border-radius: 17px;
+      box-shadow: 0 10px 26px rgba(63, 36, 201, 0.22);
+    }
+
+    .nurs497-m01-checklist .completion-message {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      margin: 1.25rem 1.25rem 0;
+      padding: 0.9rem 1rem;
+      color: var(--green);
+      background: var(--green-soft);
+      border: 1px solid rgba(8, 120, 63, 0.3);
+      border-radius: 14px;
+      font-weight: 800;
+    }
+
+    .nurs497-m01-checklist .completion-message[hidden] { display: none; }
+    .nurs497-m01-checklist .completion-message svg { width: 1.5rem; height: 1.5rem; flex: none; }
+
+    .nurs497-m01-checklist .celebration-confetti {
+      position: absolute;
+      z-index: 5;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .nurs497-m01-checklist .celebration-confetti[hidden] { display: none; }
+
+    .nurs497-m01-checklist .confetti-piece {
+      position: absolute;
+      top: var(--confetti-y);
+      left: var(--confetti-x);
+      width: var(--confetti-width);
+      height: var(--confetti-height);
+      background: var(--confetti-color);
+      border-radius: var(--confetti-radius);
+      transform: rotate(var(--confetti-rotation));
+      animation: nurs497-m01-confetti var(--confetti-duration) linear var(--confetti-delay) forwards;
+    }
+
+    @keyframes nurs497-m01-confetti {
+      0% {
+        opacity: 0;
+        transform: translate3d(var(--confetti-start-x), var(--confetti-start-y), 0) rotate(var(--confetti-rotation));
+      }
+      8% { opacity: 1; }
+      82% { opacity: 1; }
+      100% {
+        opacity: 0;
+        transform: translate3d(var(--confetti-end-x), var(--confetti-end-y), 0) rotate(calc(var(--confetti-rotation) + var(--confetti-spin)));
+      }
+    }
+
+    .nurs497-m01-checklist .progress-line {
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .nurs497-m01-checklist .progress-label { font-size: 0.82rem; font-weight: 800; color: var(--muted); }
+    .nurs497-m01-checklist .progress-count { font-size: 1.1rem; font-weight: 800; color: var(--primary-deep); font-variant-numeric: tabular-nums; }
+
+    .nurs497-m01-checklist .progress-track {
+      height: 0.75rem;
+      margin-top: 0.65rem;
+      overflow: hidden;
+      background: var(--primary-soft);
+      border-radius: 999px;
+    }
+
+    .nurs497-m01-checklist .progress-fill {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--primary);
+      border-radius: inherit;
+      transition: width 220ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nurs497-m01-checklist .board {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 0.95fr;
+      gap: 1rem;
+      padding: 1.25rem;
+    }
+
+    .nurs497-m01-checklist .lane {
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .nurs497-m01-checklist .lane-materials { background: var(--primary-soft); }
+    .nurs497-m01-checklist .lane-activities { background: var(--amber-soft); }
+    .nurs497-m01-checklist .lane-assessments { background: var(--teal-soft); }
+
+    .nurs497-m01-checklist .lane-header {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .nurs497-m01-checklist .lane-icon {
+      display: grid;
+      width: 2.35rem;
+      height: 2.35rem;
+      flex: none;
+      place-items: center;
+      color: #FFFFFF;
+      border-radius: 12px;
+    }
+
+    .nurs497-m01-checklist .lane-materials .lane-icon { background: var(--primary); }
+    .nurs497-m01-checklist .lane-activities .lane-icon { background: var(--amber); }
+    .nurs497-m01-checklist .lane-assessments .lane-icon { background: var(--teal); }
+    .nurs497-m01-checklist .lane-icon svg { width: 1.25rem; height: 1.25rem; }
+
+    .nurs497-m01-checklist h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .nurs497-m01-checklist .lane-count {
+      display: block;
+      margin-top: 0.1rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .nurs497-m01-checklist .task-list {
+      display: grid;
+      gap: 0.65rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nurs497-m01-checklist .task {
+      background: var(--surface);
+      border: 1px solid rgba(23, 21, 40, 0.12);
+      border-radius: 14px;
+      box-shadow: 0 5px 14px rgba(27, 57, 92, 0.08);
+      transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    .nurs497-m01-checklist .task:hover {
+      border-color: rgba(91, 61, 245, 0.48);
+      box-shadow: 0 8px 18px rgba(63, 36, 201, 0.13);
+      transform: translateY(-1px);
+    }
+
+    .nurs497-m01-checklist .task label {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: start;
+      min-height: 2.75rem;
+      padding: 0.85rem;
+      cursor: pointer;
+    }
+
+    .nurs497-m01-checklist .task input {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin: 0.12rem 0 0;
+      accent-color: var(--green);
+      cursor: pointer;
+    }
+
+    .nurs497-m01-checklist .task input:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .nurs497-m01-checklist .task-copy { min-width: 0; }
+    .nurs497-m01-checklist .task-title { display: block; color: var(--ink); font-size: 0.9rem; font-weight: 700; line-height: 1.4; }
+
+    .nurs497-m01-checklist .task-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.55rem;
+    }
+
+    .nurs497-m01-checklist .task-type {
+      display: inline-flex;
+      padding: 0.18rem 0.48rem;
+      color: var(--muted);
+      background: var(--page);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .nurs497-m01-checklist .task-state { color: var(--muted); font-size: 0.78rem; font-weight: 800; white-space: nowrap; }
+    .nurs497-m01-checklist .task-state::after { content: "To do"; }
+
+    .nurs497-m01-checklist .task.is-complete {
+      border-color: rgba(8, 120, 63, 0.35);
+      background: var(--green-soft);
+      box-shadow: none;
+    }
+
+    .nurs497-m01-checklist .task.is-complete .task-title { text-decoration: line-through; text-decoration-thickness: 1.5px; }
+    .nurs497-m01-checklist .task.is-complete .task-state { color: var(--green); }
+    .nurs497-m01-checklist .task.is-complete .task-state::after { content: "Complete"; }
+
+    .nurs497-m01-checklist .storage-warning {
+      margin: 0 1.25rem 1.25rem;
+      padding: 0.85rem 1rem;
+      color: #7A271A;
+      background: #FFF0EC;
+      border: 1px solid #F5B8A8;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .nurs497-m01-checklist .storage-warning[hidden] { display: none; }
+
+    .nurs497-m01-checklist .page-foot {
+      margin: 1rem 0 0;
+      padding: 0.85rem 1rem;
+      color: rgba(255, 255, 255, 0.7);
+      background: var(--charcoal);
+      border-radius: 14px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .nurs497-m01-checklist .sr-live {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 920px) {
+      .nurs497-m01-checklist .checklist-header { grid-template-columns: 1fr; gap: 1.25rem; }
+      .nurs497-m01-checklist .board { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .nurs497-m01-checklist { padding: 0.75rem var(--page-gutter) 1.5rem; }
+      .nurs497-m01-checklist .checklist-header { padding: 1.4rem 1.15rem; }
+      .nurs497-m01-checklist h1 { font-size: 1.65rem; }
+      .nurs497-m01-checklist .board { padding: 0.75rem; }
+      .nurs497-m01-checklist .lane { padding: 0.85rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .nurs497-m01-checklist .progress-fill,
+      .nurs497-m01-checklist .task { transition: none; }
+      .nurs497-m01-checklist .task:hover { transform: none; }
+      .nurs497-m01-checklist .celebration-confetti { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nurs497-m01-checklist">
+    <main class="checklist-shell">
+      <header class="checklist-header">
+        <div>
+          <h1>Module 1 Weekly Checklist</h1>
+          <p class="header-copy">Facing the Challenges of Today's Workplace</p>
+          <p class="header-instruction">Check each task as you complete it. Checked items stay checked on this browser.</p>
+        </div>
+        <div class="progress-panel" aria-labelledby="progressLabel">
+          <div class="progress-line">
+            <span class="progress-label" id="progressLabel">Weekly progress</span>
+            <span class="progress-count" id="progressCount">0 of 11 complete</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-labelledby="progressLabel" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0">
+            <span class="progress-fill" id="progressFill"></span>
+          </div>
+        </div>
+      </header>
+
+      <div class="completion-message" id="completionMessage" role="status" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="m7.5 12.2 3 3 6-6.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Well done. You completed the Module 1 checklist.</span>
+      </div>
+
+      <div class="board">
+        <section class="lane lane-materials" data-group="materials" aria-labelledby="materialsTitle">
+          <div class="lane-header">
+            <span class="lane-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Zm3 0v16M11 8h5M11 12h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h2 id="materialsTitle">Instructional Materials</h2><span class="lane-count">0 of 8 complete</span></div>
+          </div>
+          <ul class="task-list">
+            <li class="task"><label><input type="checkbox" data-task-id="who" /><span class="task-copy"><span class="task-title">State of the World&#x27;s Nursing 2025</span><span class="task-meta"><span class="task-type">Explore</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="benner1" /><span class="task-copy"><span class="task-title">Benner&#x27;s Stages: Novice to Expert / Nursing Fundamentals</span><span class="task-meta"><span class="task-type">Video</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="benner2" /><span class="task-copy"><span class="task-title">Patricia Benner&#x27;s Novice to Expert Theory in Nursing</span><span class="task-meta"><span class="task-type">Video</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="identity" /><span class="task-copy"><span class="task-title">What Is Professional Identity in Nursing?</span><span class="task-meta"><span class="task-type">Video</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="communities" /><span class="task-copy"><span class="task-title">Empowering Communities: The Heartbeat of Nursing Education</span><span class="task-meta"><span class="task-type">Video</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="engage" /><span class="task-copy"><span class="task-title">Community Engagement Leads to Professional Identity Formation of Nursing Students</span><span class="task-meta"><span class="task-type">Reading</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="mentors" /><span class="task-copy"><span class="task-title">Mentors Supporting Nurses Transitioning to Primary Healthcare Roles</span><span class="task-meta"><span class="task-type">Reading</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="black" /><span class="task-copy"><span class="task-title">Black, B. P. (2024). Professional nursing: Concepts and challenges (10th ed.). Elsevier - Chapters 1, 12, and 14</span><span class="task-meta"><span class="task-type">Reading</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+          </ul>
+        </section>
+        <section class="lane lane-activities" data-group="activities" aria-labelledby="activitiesTitle">
+          <div class="lane-header">
+            <span class="lane-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Zm4 4h8M8 12h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h2 id="activitiesTitle">Activities</h2><span class="lane-count">0 of 1 complete</span></div>
+          </div>
+          <ul class="task-list">
+            <li class="task"><label><input type="checkbox" data-task-id="disc" /><span class="task-copy"><span class="task-title">Module 1 Discussion (MLO 1.3)</span><span class="task-meta"><span class="task-type">Discussion</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+          </ul>
+        </section>
+        <section class="lane lane-assessments" data-group="assessments" aria-labelledby="assessmentsTitle">
+          <div class="lane-header">
+            <span class="lane-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 4h6l1 2h3v15H5V6h3l1-2Zm0 7 2 2 4-4M9 17h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h2 id="assessmentsTitle">Assignments and Assessments</h2><span class="lane-count">0 of 2 complete</span></div>
+          </div>
+          <ul class="task-list">
+            <li class="task"><label><input type="checkbox" data-task-id="assign" /><span class="task-copy"><span class="task-title">Module 1 Authentic Assignment (MLO 1.2-1.3)</span><span class="task-meta"><span class="task-type">Assignment</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+            <li class="task"><label><input type="checkbox" data-task-id="quiz" /><span class="task-copy"><span class="task-title">Module 1 Quiz (MLO 1.1-1.2)</span><span class="task-meta"><span class="task-type">Quiz</span><span class="task-state" aria-hidden="true"></span></span></span></label></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="storage-warning" id="storageWarning" role="status" hidden>Your browser is blocking saved progress. You can still use this checklist during this visit, but checked items may reset when the page closes.</p>
+      <div class="celebration-confetti" id="celebrationConfetti" aria-hidden="true" hidden></div>
+    </main>
+    <p class="page-foot">NURS 497 Nursing Capstone | Module 1</p>
+    <div class="sr-live" id="checklistLive" aria-live="polite" aria-atomic="true"></div>
+    <noscript><p>Check the Module 1 tasks as you finish them. Saving checked items between visits needs JavaScript. The tasks are State of the World&#x27;s Nursing 2025, Benner&#x27;s Stages: Novice to Expert / Nursing Fundamentals, Patricia Benner&#x27;s Novice to Expert Theory in Nursing, What Is Professional Identity in Nursing?, Empowering Communities: The Heartbeat of Nursing Education, Community Engagement Leads to Professional Identity Formation of Nursing Students, Mentors Supporting Nurses Transitioning to Primary Healthcare Roles, Black, B. P. (2024). Professional nursing: Concepts and challenges (10th ed.). Elsevier - Chapters 1, 12, and 14, Module 1 Discussion (MLO 1.3), Module 1 Authentic Assignment (MLO 1.2-1.3), Module 1 Quiz (MLO 1.1-1.2).</p></noscript>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.querySelector(".nurs497-m01-checklist");
+      var boxes = Array.prototype.slice.call(root.querySelectorAll("input[type='checkbox'][data-task-id]"));
+      var progressCount = root.querySelector("#progressCount");
+      var progressFill = root.querySelector("#progressFill");
+      var progressTrack = root.querySelector(".progress-track");
+      var live = root.querySelector("#checklistLive");
+      var warning = root.querySelector("#storageWarning");
+      var completionMessage = root.querySelector("#completionMessage");
+      var celebrationConfetti = root.querySelector("#celebrationConfetti");
+      var storageKey = "nurs497-m01-weekly-checklist-v1";
+      var storageAvailable = true;
+      var previousComplete = false;
+
+      try {
+        localStorage.setItem(storageKey + "-test", "1");
+        localStorage.removeItem(storageKey + "-test");
+      } catch (error) {
+        storageAvailable = false;
+        warning.hidden = false;
+      }
+
+      if (storageAvailable) {
+        try {
+          var saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+          boxes.forEach(function (box) { box.checked = saved.indexOf(box.dataset.taskId) !== -1; });
+        } catch (error) {
+          localStorage.removeItem(storageKey);
+        }
+      }
+
+      function celebrate() {
+        var colors = ["#5B3DF5", "#8A5A00", "#06706C", "#E8457A", "#0BA5A0"];
+        celebrationConfetti.innerHTML = "";
+        celebrationConfetti.hidden = false;
+        for (var i = 0; i < 42; i += 1) {
+          var piece = document.createElement("span");
+          piece.className = "confetti-piece";
+          piece.style.setProperty("--confetti-color", colors[i % colors.length]);
+          piece.style.setProperty("--confetti-delay", ((i % 8) * 0.04) + "s");
+          piece.style.setProperty("--confetti-duration", (2.15 + (i % 6) * 0.14) + "s");
+          piece.style.setProperty("--confetti-rotation", ((i * 47) % 180) + "deg");
+          piece.style.setProperty("--confetti-x", (2 + ((i * 61) % 96)) + "%");
+          piece.style.setProperty("--confetti-y", (2 + ((i * 47) % 78)) + "%");
+          piece.style.setProperty("--confetti-start-x", (((i * 19) % 36) - 18) + "px");
+          piece.style.setProperty("--confetti-start-y", (-(6 + (i % 14)) + "px"));
+          piece.style.setProperty("--confetti-end-x", (((i * 53) % 170) - 85) + "px");
+          piece.style.setProperty("--confetti-end-y", (90 + ((i * 31) % 200)) + "px");
+          piece.style.setProperty("--confetti-spin", (360 + ((i * 17) % 540)) + "deg");
+          piece.style.setProperty("--confetti-width", (i % 3 === 0 ? "0.38rem" : i % 3 === 1 ? "0.6rem" : "0.45rem"));
+          piece.style.setProperty("--confetti-height", (i % 3 === 0 ? "0.38rem" : i % 3 === 1 ? "0.34rem" : "0.72rem"));
+          piece.style.setProperty("--confetti-radius", (i % 3 === 0 ? "50%" : "2px"));
+          celebrationConfetti.appendChild(piece);
+        }
+        window.setTimeout(function () {
+          celebrationConfetti.hidden = true;
+          celebrationConfetti.innerHTML = "";
+          fitEmbed();
+        }, 2200);
+      }
+
+      function save() {
+        if (!storageAvailable) return;
+        var checked = boxes.filter(function (box) { return box.checked; }).map(function (box) { return box.dataset.taskId; });
+        try { localStorage.setItem(storageKey, JSON.stringify(checked)); }
+        catch (error) {
+          storageAvailable = false;
+          warning.hidden = false;
+        }
+      }
+
+      function update(announce) {
+        var complete = boxes.filter(function (box) { return box.checked; }).length;
+        progressCount.textContent = complete + " of " + boxes.length + " complete";
+        progressFill.style.width = ((complete / boxes.length) * 100) + "%";
+        progressTrack.setAttribute("aria-valuenow", String(complete));
+        progressTrack.setAttribute("aria-valuemax", String(boxes.length));
+        var nowComplete = complete === boxes.length && boxes.length > 0;
+        completionMessage.hidden = !nowComplete;
+
+        boxes.forEach(function (box) {
+          box.closest(".task").classList.toggle("is-complete", box.checked);
+        });
+
+        Array.prototype.forEach.call(root.querySelectorAll(".lane"), function (lane) {
+          var groupBoxes = Array.prototype.slice.call(lane.querySelectorAll("input[type='checkbox']"));
+          var groupComplete = groupBoxes.filter(function (box) { return box.checked; }).length;
+          lane.querySelector(".lane-count").textContent = groupComplete + " of " + groupBoxes.length + " complete";
+        });
+
+        if (announce) {
+          live.textContent = "";
+          window.setTimeout(function () {
+            live.textContent = nowComplete
+              ? "Well done. You completed the Module 1 checklist."
+              : progressCount.textContent + (storageAvailable ? ". Progress saved." : ". Progress updated for this visit only.");
+          }, 40);
+          if (nowComplete && !previousComplete) celebrate();
+        }
+        previousComplete = nowComplete;
+        fitEmbed();
+      }
+
+      boxes.forEach(function (box) {
+        box.addEventListener("change", function () { save(); update(true); });
+      });
+
+      function fitEmbed() {
+        var node = root;
+        var i = 0;
+        while (node && i < 20) {
+          node.style.setProperty("overflow", "visible", "important");
+          node.style.setProperty("height", "auto", "important");
+          node.style.setProperty("max-height", "none", "important");
+          node = node.parentElement;
+          i += 1;
+        }
+        if (document.body) {
+          document.body.style.margin = "0";
+          document.body.style.padding = "0";
+        }
+        var height = Math.max(root.scrollHeight, root.offsetHeight, Math.ceil(root.getBoundingClientRect().bottom));
+        if (window.frameElement) {
+          try {
+            var frame = window.frameElement;
+            frame.style.setProperty("height", height + "px", "important");
+            frame.style.setProperty("min-height", height + "px", "important");
+            frame.style.setProperty("max-height", "none", "important");
+            frame.style.setProperty("overflow", "hidden", "important");
+            frame.scrolling = "no";
+            var outer = frame.parentElement;
+            var j = 0;
+            while (outer && j < 20) {
+              outer.style.setProperty("overflow", "visible", "important");
+              outer.style.setProperty("height", "auto", "important");
+              outer.style.setProperty("max-height", "none", "important");
+              outer = outer.parentElement;
+              j += 1;
+            }
+          } catch (error) {}
+        }
+        try {
+          if (!document.referrer) return;
+          var source = new URL(document.referrer).origin;
+          var current = window;
+          while (current !== top) {
+            current = current.parent;
+            current.postMessage({ type: "bb-auto-resize", height: height }, source);
+          }
+        } catch (error) {}
+      }
+
+      update(false);
+      window.addEventListener("load", fitEmbed);
+      window.addEventListener("resize", fitEmbed);
+      if (typeof ResizeObserver !== "undefined") new ResizeObserver(fitEmbed).observe(root);
+      [100, 400, 1200, 2500].forEach(function (delay) { window.setTimeout(fitEmbed, delay); });
+    })();
+  </script>
+</body>
+</html>
